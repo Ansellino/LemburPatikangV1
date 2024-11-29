@@ -5,7 +5,7 @@ html, body {
     font-weight: 200;
     height: 100vh;
     margin: 0;
-    /* background-image: url('../images/image1.jpg'); */
+    background-image: url('../images/image1.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -13,7 +13,6 @@ html, body {
 .full-height {
     height: 100vh;
 }
-
 .flex-center {
     align-items: center;
     display: flex;
@@ -28,7 +27,7 @@ html, body {
     position: absolute;
     right: 10px;
     top: 18px;
-    background-color: #222222;
+    background-color: blue;
 }
 
 .content {
@@ -36,7 +35,7 @@ html, body {
 }
 
 .title {
-    color: #222222;
+    color:  #0000;
     font-size: 54px;
 }
 
@@ -61,10 +60,11 @@ h3{
 
 #title-atas {
 text-align: center;
+background-color: blue;
 }
 
+/*warna font nav-bar*/
 .nav-link {
-    color: #9d9d9d !important;
-    }
-
+    color: black !important;
+}
     #more  {display:  none;}

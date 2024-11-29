@@ -23,16 +23,14 @@
     <link href="{{ URL::asset('assets/css/style.css') }}" type="text/css" rel="stylesheet">
 </head>
 <body>
-    <div id="title-atas">
+   {{-- <div id="title-atas">
    <h1>UMNGrove</h1> <br>
     <h6>Testing Website Template</h6>
-    {{-- <img src="{{ URL::asset('assets/images/image1.jpg')}}" alt="image logo"> --}}
+    <img src="{{ URL::asset('assets/images/image1.jpg')}}" alt="image logo"> --}}
 </div>
-    <div id="app">
+    <div class="navigation-bar">
         <nav class="navbar navbar-expand-md navbar-light bg-dark shadow-sm">
             <div class="container">
-
-
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -64,11 +62,11 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Category</a>
                             <div class="dropdown-menu">
-                              <a class="dropdown-item" href="/category/1">Beach</a>
-                              <a class="dropdown-item" href="/category/2">Mountain</a>
-                              <a class="dropdown-item" href="/category/3">Forest</a>
-                              <a class="dropdown-item" href="/category/4">Desert</a>
-                              <a class="dropdown-item" href="/category/5">Cave</a>
+                              <a class="dropdown-item" href="/category/1">Contact</a>
+                              <a class="dropdown-item" href="/category/2">Pembayaran</a>
+                              <a class="dropdown-item" href="/category/3">Product and Tours</a>
+                              <a class="dropdown-item" href="/category/4">News and Blog</a>
+                              <a class="dropdown-item" href="/category/5">Indicator Pengunjung</a>
                               <div class="dropdown-divider"></div>
                               <a class="dropdown-item" href="/category/6">Others</a>
                             </div>

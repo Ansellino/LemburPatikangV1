@@ -2,26 +2,364 @@
 {{-- @auth
 @if (Auth::user()->role=="member")   --}}
 @section('content')
-<div class="row justify-content-center">
-    <div class="col-md-8">
-        <div class="card">
-            <div class="card-header">{{ __('Information') }}</div>
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">   
 
-            <div class="card-body-center">
-                    <div class="form-group row">
-                        <label for="category" class="col-md-7 col-form-label text-md-right">Project UMNGrove </label>
-                    </div>
-                    <div class="form-group row">
-                        <label for="category" class="col-md-12 col-form-label text-md-center">28/11/2024</label>
-                    </div>
-                    <div class="form-group row">
-                        <label for="category" class="col-md-12 col-form-label text-md-center">Ansel, Edward</label>
-                    </div>
-                    </div>
-            </div>
-        </div>
+  <title>About Us - Lembur Mangrove</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      min-height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .page-wrapper {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .main-header {
+      width: 100%;
+      top: 0;
+      background-color: #fcfce6;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .custom-navbar {
+      padding: 10px 0;
+    }
+
+    .logo {
+      height: 60px;
+    }
+
+    .navbar-nav .nav-link {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #000;
+      margin: 0 15px;
+      text-transform: uppercase;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #333;
+      text-decoration: none;
+    }
+
+    .about-banner {
+        background: url('{{ URL::to('/assets/images/About-Us.jpg') }}') no-repeat center center/cover;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+    }
+
+    .banner-content h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .banner-content p {
+      font-size: 1.2rem;
+    }
+
+    .about-content {
+      padding: 40px 20px;
+      color: #333;
+    }
+
+    .about-content p {
+      margin-bottom: 15px;
+      line-height: 1.8;
+      font-size: 1.1rem;
+    }
+
+    .about-content {
+      padding: 40px 0;
+    }
+
+    .about-content h2 {
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    .about-content p {
+      margin-bottom: 15px;
+      line-height: 1.8;
+      font-size: 1.1rem;
+      color: #333;
+    }
+
+    .info-box {
+      background-color: #4b634e;
+      color: white;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .info-box h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .info-box ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .info-box ul li {
+      margin-bottom: 10px;
+      font-size: 1rem;
+    }
+
+    .img-fluid {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .shadow {
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    .rounded {
+      border-radius: 8px;
+    }
+
+    .vision-journey-section {
+      background-color: #d97735;
+      color: white;
+      padding: 60px 20px;
+    }
+
+    .vision-journey-section h2 {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .vision-journey-section p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin-bottom: 15px;
+    }
+
+    .offer-section {
+      background-color: #f4f6f3;
+      padding: 60px 20px;
+      color: #333;
+    }
+
+    .offer-card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      transition: transform 0.3s ease;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .offer-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .offer-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .row .col-lg-4 {
+      display: flex;
+    }
+
+    .offer-card h3 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #a65325;
+      margin-bottom: 10px;
+    }
+
+    .offer-card p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #555;
+      flex-grow: 1;
+    }
+
+    .footer {
+      background-color: #4b634e;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+      margin-top: auto;
+    }
+
+    .footer-link {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    .footer-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="about-banner">
+    <div class="banner-content text-center">
+      <h1>About Us</h1>
+      <p>Tentang Kami - Lembur Mangrove Patikang</p>
     </div>
-</div>
+  </section>
+
+  <section class="about-content container">
+    <div class="row">
+      <div class="col-lg-6">
+        <h2>Selamat Datang di Lembur Mangrove</h2>
+        <p>
+          Selamat datang di Lembur Mangrove, sebuah desa wisata yang terletak di Kampung Patikang, Desa Citeureup,
+          Panimbang, Pandeglang, Banten.
+        </p>
+        <p>
+          Dikelilingi oleh hutan mangrove yang asri dan pesona alam pantai, kami komunitas yang menggabungkan pelestarian
+          lingkungan dengan kearifan lokal.
+        </p>
+      </div>
+      <div class="col-lg-6">
+        <div class="info-box">
+          <h3>Jam Operasional</h3>
+          <ul>
+            <li><b>Senin – Kamis:</b> 08.00 – 17.00</li>
+            <li><b>Sabtu – Minggu:</b> 08.00 – 17.00</li>
+            <li><b>Jumat:</b> Tutup</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-5">
+      <div class="col-lg-6">
+         <img src="{{ URL::to('/assets/images/Mangrove-Activity.jpg') }}" alt="Mangrove Activity" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-lg-6">
+        <h2>Who Are We?</h2>
+        <p>
+          Kami adalah komunitas petani, nelayan, dan pengrajin yang berdedikasi untuk melestarikan ekosistem mangrove
+          sekaligus mengenalkan Lembur Mangrove pada dunia.
+        </p>
+        <p>
+          Melalui dukungan inisiatif dari Pokdarwis Putri Gundul, kami mengembangkan kawasan mangrove ini menjadi
+          destinasi edukasi dan wisata alam yang unik.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="vision-journey-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-left">
+          <h2>Our Vision</h2>
+          <p>
+            Menginspirasi kepedulian terhadap lingkungan dan pariwisata berkelanjutan melalui pelestarian mangrove yang
+            dipadukan dengan pengalaman budaya yang autentik.
+            Kami bercita-cita menjadi desa wisata unggulan yang menghubungkan manusia dengan keindahan dan pentingnya
+            mangrove.
+          </p>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-lg-12 text-left">
+          <h2>Our Journey</h2>
+          <p>
+            Berawal dari sebuah kawasan rawa yang menjadi tempat tinggal masyarakat lokal, Lembur Mangrove kini telah
+            berkembang menjadi desa wisata yang memadukan konservasi dengan pemberdayaan ekonomi.
+            Sejak 2017, berkat inisiatif Pokdarwis Putri Gundul, kami mengubah potensi sumber daya alam kami menjadi
+            pengalaman wisata yang mengedukasi dan menghibur.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="offer-section">
+    <div class="container text-center">
+      <h2>What We Offer?</h2>
+      
+      <div class="row mt-4">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="offer-card">
+            <img src="{{ URL::to('/assets/images/explorasi-mangrove.jpg') }}" alt="Eksplorasi Mangrove" class="img-fluid rounded">
+            <h3>Eksplorasi Mangrove</h3>
+            <p>
+              Ikuti tur berpemandu untuk menjelajahi hutan mangrove, belajar tentang keanekaragaman hayati, dan memahami
+              pentingnya konservasi mangrove.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="offer-card">
+            <img src="{{ URL::to('/assets/images/petualangan-laut.jpg') }}" alt="Petualangan Laut" class="img-fluid rounded">
+            <h3>Petualangan Laut</h3>
+            <p>
+              Rasakan ketenangan alam laut dan hutan mangrove, cocok untuk pecinta alam dan fotografi. Ada juga paket
+              snorkeling dan lainnya untuk pecinta laut.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="offer-card">
+            <img src="{{ URL::to('/assets/images/pengalaman-edukasi.jpg') }}" alt="Pengalaman Edukasi" class="img-fluid rounded">
+            <h3>Pengalaman Edukasi</h3>
+            <p>
+              Ambil bagian dalam kegiatan seperti penanaman mangrove dan pelatihan tentang praktik berkelanjutan yang
+              mendukung lingkungan dan masyarakat.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container text-center">
+      <a href="#" class="footer-link">Refund Policy</a>
+      <a href="#" class="footer-link">Privacy Policy</a>
+      <a href="#" class="footer-link">Indikator Pengunjung</a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
 
 @endsection
 {{-- @endif
