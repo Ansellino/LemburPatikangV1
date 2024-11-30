@@ -40,9 +40,12 @@ class welcome extends Controller
         return view('csr');
     }
 
+    public function researchdedication(){
+        return view('researchdedication');
+    }
+
     public function testing(){
         $post = articles::where('category_id', 4)->get(); // Fetch posts with category_id 4
         return view('testing', ['post' => $post]);
     }
-
 }

@@ -73,7 +73,7 @@
                               <a class="dropdown-item" href="/category/1">Product and Tour</a>
                               <a class="dropdown-item" href="/category/2">News and Blog</a>
                               <a class="dropdown-item" href="{{ url('/csr') }}">CSR Program</a>
-                              <a class="dropdown-item" href="">Research and Dedication</a>
+                              <a class="dropdown-item" href="{{ url('/researchdedication') }}">Research and Dedication</a>
                               <a class="dropdown-item" href="/category/3">Update Website</a>
                               <div class="dropdown-divider"></div>
                               <a class="dropdown-item" href="/category/5">Others</a>

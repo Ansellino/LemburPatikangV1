@@ -91,29 +91,88 @@ body, html {
   font-size: 1.2rem;
 }
 
+/* CSR Section */
+.csr-section {
+  padding: 60px 20px;
+  background-color: #f5f5f5;
+}
+
+/* Header Section */
+.header-background {
+  background-image: url('images/csr-header.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+}
+
+.header-background h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.header-background p {
+  font-size: 1.2rem;
+}
+
 /* Content Section */
-.research-dedication-section h3 {
+.content-box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.content-box h3 {
   font-size: 1.8rem;
   color: #4b644a;
   margin-bottom: 20px;
 }
 
-.research-dedication-section p {
+.content-box p {
   font-size: 1rem;
   line-height: 1.8;
   color: #333;
 }
 
-/* Right Column Image */
-.right-image {
-  background : url('{{ URL::to('/assets/images/research-image.jpg') }}') no-repeat center center/cover;
-  background-size: cover;
-  background-position: center;
-  height: 300px;
-  border-radius: 10px;
+/* Initiatives */
+.initiative-section {
+  margin-top: 30px;
 }
 
-/* Buttons */
+.initiative-box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+}
+
+.initiative-box i {
+  font-size: 3rem;
+  color: #4b644a;
+  margin-bottom: 15px;
+}
+
+.initiative-box h4 {
+  font-size: 1.2rem;
+  color: #4b644a;
+  margin-bottom: 10px;
+}
+
+.initiative-box p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Call to Action */
 .btn-contact {
   background-color: #f4a261;
   color: white;
@@ -129,7 +188,7 @@ body, html {
   color: white;
 }
 
-.research-dedication-section a {
+a {
   color: #4b644a;
   text-decoration: underline;
 }
@@ -157,52 +216,79 @@ body, html {
 </style>
 </head>
 <body>
-    <section class="research-dedication-section">
+    <section class="csr-section">
         <div class="container">
-          <!-- Header -->
+          <!-- Header Section -->
           <div class="header-section text-center">
             <div class="header-background">
-              <h2>Research & Dedication</h2>
-              <p>Penelitian & Pengabdian Masyarakat bagi Dunia Mangrove</p>
+              <h2>CSR (Corporate Social Responsibility)</h2>
+              <p>Initiatives in Collaboration – Lembur Mangrove Patikang</p>
             </div>
           </div>
 
-          <!-- Content -->
-          <div class="row mt-5">
-            <!-- Left Column (Text) -->
-            <div class="col-lg-7">
-              <h3>Open to All Research & Dedication Initiatives!</h3>
-              <p>
-                Lembur Mangrove Patikang di Desa Citeureup adalah kawasan yang kaya akan potensi untuk kegiatan penelitian dan pengabdian masyarakat.
-                Sebagai desa wisata berbasis konservasi dan pemberdayaan, kami membuka peluang kolaborasi dengan universitas dan institusi akademik
-                untuk bersama-sama menciptakan dampak positif melalui ilmu pengetahuan dan aksi nyata.
-              </p>
-              <p>
-                Lembur Mangrove percaya bahwa sinergi antara dunia akademik dan komunitas lokal dapat menjadi fondasi yang kuat untuk menciptakan
-                perubahan berkelanjutan. Kami berkomitmen menyediakan fasilitas dan akses yang mendukung keberhasilan program penelitian dan
-                pengabdian masyarakat.
-              </p>
-              <p>
-                Jika universitas atau institusi Anda tertarik untuk bergabung, silakan hubungi kami melalui kontak resmi kami untuk langkah
-                lebih lanjut. Bersama, kita bisa menciptakan inovasi dan kontribusi terhadap lingkungan dan kesejahteraan masyarakat di Lembur Mangrove.
-              </p>
-            </div>
-            <!-- Right Column (Background Image) -->
-            <div class="col-lg-5">
-              <div class="right-image"></div>
+          <!-- Content Section -->
+          <div class="content-section mt-5">
+            <div class="row justify-content-center">
+              <div class="col-lg-10">
+                <div class="content-box">
+                  <h3>Open to All CSR Initiatives!</h3>
+                  <p>
+                    Di Lembur Mangrove, kami percaya bahwa pelestarian lingkungan dan pemberdayaan masyarakat adalah tanggung jawab bersama.
+                    Oleh karena itu, kami membuka peluang kolaborasi melalui program Corporate Social Responsibility (CSR) untuk mendukung
+                    inisiatif yang berfokus pada keberlanjutan, pendidikan, dan pengembangan ekonomi lokal.
+                  </p>
+                  <p>
+                    Melalui kemitraan CSR, perusahaan dan organisasi dapat berkontribusi dalam berbagai kegiatan, seperti:
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
 
-          <!-- Footer CTA -->
-          <div class="row mt-4 text-center">
-            <div class="col-lg-12">
-              <a href="https://wa.me/62817849463" class="btn btn-contact">
-                Click Here to Chat Pak Deden at +62 817-849-463
-              </a>
-              <p class="mt-3">
-                Email us at <a href="mailto:hello@lemburmangrove.com">hello@lemburmangrove.com</a>
-              </p>
+          <!-- Initiative Section -->
+          <div class="initiative-section row mt-4 text-center">
+            <!-- Initiative 1 -->
+            <div class="col-md-6 col-lg-3">
+              <div class="initiative-box">
+                <i class="icon icon-community"></i>
+                <h4>Pemberdayaan Masyarakat</h4>
+                <p>Pelatihan keterampilan, pendanaan usaha lokal, dan pengembangan produk berbasis mangrove.</p>
+              </div>
             </div>
+            <!-- Initiative 2 -->
+            <div class="col-md-6 col-lg-3">
+              <div class="initiative-box">
+                <i class="icon icon-education"></i>
+                <h4>Edukasi Lingkungan</h4>
+                <p>Program edukasi bagi anak-anak dan masyarakat untuk meningkatkan kesadaran akan pentingnya pelestarian ekosistem.</p>
+              </div>
+            </div>
+            <!-- Initiative 3 -->
+            <div class="col-md-6 col-lg-3">
+              <div class="initiative-box">
+                <i class="icon icon-infrastructure"></i>
+                <h4>Pengembangan Infrastruktur Desa</h4>
+                <p>Dukungan untuk fasilitas umum yang meningkatkan kualitas hidup masyarakat sekitar.</p>
+              </div>
+            </div>
+            <!-- Initiative 4 -->
+            <div class="col-md-6 col-lg-3">
+              <div class="initiative-box">
+                <i class="icon icon-conservation"></i>
+                <h4>Konservasi Mangrove</h4>
+                <p>Penanaman mangrove untuk melindungi pesisir, meningkatkan kualitas lingkungan, dan mitigasi bencana tsunami.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Call to Action Section -->
+          <div class="cta-section text-center mt-5">
+            <a href="https://wa.me/62817849463" class="btn btn-contact">
+              Click Here to Chat Pak Deden at +62 817-849-463
+            </a>
+            <p class="mt-3">
+              Email us at <a href="mailto:hello@lemburmangrove.com">hello@lemburmangrove.com</a>
+            </p>
           </div>
         </div>
       </section>
