@@ -11,7 +11,6 @@
    Mangrove</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="home.css">   
-    <link href="{{ URL::asset('assets/css/public.css') }}" type="text/css" rel="stylesheet">
   
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <style>

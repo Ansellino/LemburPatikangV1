@@ -20,7 +20,7 @@
         min-height: 100%;
         display: flex;
         flex-direction: column;
-        background-image: url('assets/images/background-contact.jpg');
+        background-image: url('assets/images/background-contact.jpg') !important;
     }
 
     body,
