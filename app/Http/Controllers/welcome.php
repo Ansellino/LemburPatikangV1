@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\DB;
 class welcome extends Controller
 {
     public function indexshow(){
-        $post = articles::with('Category')->get();
+        $post = articles::where('Category_id',2)->get();
         return view('welcome',['post'=>$post]);
     }
     public function aboutus(){

@@ -675,15 +675,14 @@ padding: 50px 20px;
         <div class="container">
             <h2 class="section-title text-center">Our Latest Blogs & News</h2>
             <div class="row mt-4">
-                @foreach ($post as $post)
+                @foreach ($post->where('category_id', 2)->take(3) as $post)
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="blog-card">
                             <img src="{{ URL::to('/assets/images/'.$post->image) }}" alt="{{ $post->title }}" class="img-fluid rounded">
-
                             <h3><a href="/post/{{$post->id}}" style="color: black;">{{ $post->title }}</a></h3>
                             <p>
-                                {{ \Illuminate\Support\Str::limit($post->description, 100) }}
-                                @if (strlen($post->description) > 50)
+                                {{ \Illuminate\Support\Str::limit($post->description, 30) }}
+                                @if (strlen($post->description) > 30)
                                     ... <a href="/post/{{$post->id}}">Read More</a>
                                 @endif
                             </p>

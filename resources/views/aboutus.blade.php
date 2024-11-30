@@ -296,7 +296,7 @@
 
   <section class="offer-section">
     <div class="container text-center">
-        <h2>What We Offer?</h2>
+        <b><h1>What We Offer?</h1></b>
 
         <div class="row mt-4">
             @foreach ($post as $post)
@@ -306,8 +306,8 @@
                             <img src="{{ URL::to('/assets/images/'.$post->image) }}" alt="{{ $post->title }}" class="img-fluid rounded">
                             <h3><a href="/post/{{$post->id}}" style="color: black;">{{ $post->title }}</a></h3>
                             <p>
-                                {{ \Illuminate\Support\Str::limit($post->description, 100) }}
-                                @if (strlen($post->description) > 50)
+                                {{ \Illuminate\Support\Str::limit($post->description, 30) }}
+                                @if (strlen($post->description) > 30)
                                     <a href="/post/{{ $post->id }}">Read More</a>
                                 @endif
                             </p>
