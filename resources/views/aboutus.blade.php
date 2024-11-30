@@ -1,9 +1,10 @@
 @extends('layouts.app')
 {{-- @auth
-@if (Auth::user()->role=="member")   --}}
+@if (Auth::user()->role=="member") --}}
 @section('content')
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">  
@@ -18,6 +19,7 @@
       min-height: 100%;
       display: flex;
       flex-direction: column;
+      background-image: none;
     }
 
     .page-wrapper {
@@ -55,8 +57,8 @@
     }
 
     .about-banner {
-        background: url('{{ URL::to('/assets/images/About-Us.jpg') }}') no-repeat center center/cover;
-      height: 300px;
+      background: url('{{ URL::to('/assets/images/About-Us.jpg') }}') no-repeat center center/cover;
+      height: 500px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -92,14 +94,14 @@
       font-size: 1.8rem;
       font-weight: bold;
       margin-bottom: 15px;
-      color: white;
+      color: #333;
     }
 
     .about-content p {
       margin-bottom: 15px;
       line-height: 1.8;
       font-size: 1.1rem;
-      color: white;
+      color: #333;
     }
 
     .info-box {
@@ -157,7 +159,7 @@
     }
 
     .offer-section {
-      background-color: #f4f6f3;
+      background-color: #A9B388;
       padding: 60px 20px;
       color: #333;
     }
@@ -208,27 +210,7 @@
       color: #555;
       flex-grow: 1;
     }
-
-    .footer {
-      background-color: #4b634e;
-      color: white;
-      padding: 10px 0;
-      text-align: center;
-      margin-top: auto;
-    }
-
-    .footer-link {
-      color: white;
-      margin: 0 10px;
-      text-decoration: none;
-      font-size: 0.9rem;
-    }
-
-    .footer-link:hover {
-      text-decoration: underline;
-    }
-
-  </style>
+    </style>
 </head>
 
 <body>
@@ -240,23 +222,24 @@
     </div>
   </section>
 
-  <section class="about-content container">
+  <section class="about-content container" >
     <div class="row">
-      <div class="col-lg-6">
+      <div class="col-lg-6" style="margin-top: min(50px);">
         <h2>Selamat Datang di Lembur Mangrove</h2>
         <p>
           Selamat datang di Lembur Mangrove, sebuah desa wisata yang terletak di Kampung Patikang, Desa Citeureup,
           Panimbang, Pandeglang, Banten.
         </p>
         <p>
-          Dikelilingi oleh hutan mangrove yang asri dan pesona alam pantai, kami komunitas yang menggabungkan pelestarian
+          Dikelilingi oleh hutan mangrove yang asri dan pesona alam pantai, kami komunitas yang menggabungkan
+          pelestarian
           lingkungan dengan kearifan lokal.
         </p>
       </div>
       <div class="col-lg-6">
-        <div class="info-box">
+        <div class="info-box" style="color:#FEFAE0; padding:50px;">
           <h3>Jam Operasional</h3>
-          <ul>
+          <ul style="list-style-type: disc; padding:20px;">
             <li><b>Senin – Kamis:</b> 08.00 – 17.00</li>
             <li><b>Sabtu – Minggu:</b> 08.00 – 17.00</li>
             <li><b>Jumat:</b> Tutup</li>
@@ -267,9 +250,10 @@
 
     <div class="row mt-5">
       <div class="col-lg-6">
-         <img src="{{ URL::to('/assets/images/Mangrove-Activity.jpg') }}" alt="Mangrove Activity" class="img-fluid rounded shadow">
+        <img src="{{ URL::to('/assets/images/Mangrove-Activity.jpg') }}" alt="Mangrove Activity"
+          class="img-fluid rounded shadow" style="width: 100%; height: auto;">
       </div>
-      <div class="col-lg-6">
+      <div class="col-lg-6" style=" margin-top: min(50px);">
         <h2>Who Are We?</h2>
         <p>
           Kami adalah komunitas petani, nelayan, dan pengrajin yang berdedikasi untuk melestarikan ekosistem mangrove
@@ -317,7 +301,8 @@
       <div class="row mt-4">
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="offer-card">
-            <img src="{{ URL::to('/assets/images/explorasi-mangrove.jpg') }}" alt="Eksplorasi Mangrove" class="img-fluid rounded">
+            <img src="{{ URL::to('/assets/images/explorasi-mangrove.jpg') }}" alt="Eksplorasi Mangrove"
+              class="img-fluid rounded">
             <h3>Eksplorasi Mangrove</h3>
             <p>
               Ikuti tur berpemandu untuk menjelajahi hutan mangrove, belajar tentang keanekaragaman hayati, dan memahami
@@ -327,7 +312,8 @@
         </div>
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="offer-card">
-            <img src="{{ URL::to('/assets/images/petualangan-laut.jpg') }}" alt="Petualangan Laut" class="img-fluid rounded">
+            <img src="{{ URL::to('/assets/images/petualangan-laut.jpg') }}" alt="Petualangan Laut"
+              class="img-fluid rounded">
             <h3>Petualangan Laut</h3>
             <p>
               Rasakan ketenangan alam laut dan hutan mangrove, cocok untuk pecinta alam dan fotografi. Ada juga paket
@@ -337,7 +323,8 @@
         </div>
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="offer-card">
-            <img src="{{ URL::to('/assets/images/pengalaman-edukasi.jpg') }}" alt="Pengalaman Edukasi" class="img-fluid rounded">
+            <img src="{{ URL::to('/assets/images/pengalaman-edukasi.jpg') }}" alt="Pengalaman Edukasi"
+              class="img-fluid rounded">
             <h3>Pengalaman Edukasi</h3>
             <p>
               Ambil bagian dalam kegiatan seperti penanaman mangrove dan pelatihan tentang praktik berkelanjutan yang
