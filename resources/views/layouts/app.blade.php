@@ -64,6 +64,9 @@
                         <a class="nav-link" href="{{ url('/aboutus') }}">
                             About us
                         </a>
+                        <a class="nav-link" href="{{ url('/contactus') }}">
+                            Contact us
+                        </a>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Category</a>
                             <div class="dropdown-menu">

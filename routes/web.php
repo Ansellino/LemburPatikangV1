@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\welcome;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -34,5 +35,6 @@ Route::get('/informationuser/{id}','HomeController@informationuser')->name('info
 Route::get('/aboutus','welcome@aboutus')->name('aboutus');
 Route::get('/category/{id}','welcome@category')->name('category');
 Route::get('/post/{id}','welcome@post')->name('post');
+Route::get('/contactus', 'welcome@contactus')->name('contactus');
 Route::get('/', 'welcome@indexshow')->name('homeshow');
 

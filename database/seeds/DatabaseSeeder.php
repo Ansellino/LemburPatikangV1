@@ -61,6 +61,19 @@ class DatabaseSeeder extends Seeder
                      "created_at"=>"2024-11-29 08:25:19",
                      "updated_at"=>"2024-11-29 08:25:19"]
                 ]);
+                DB::table('articles')->insert([
+                    ["user_id" => "2",
+                     "category_id"=>"2",
+                     "title"=>"open to all research & dedication initiatives!",
+                     "description"=>"Lembur Mangrove Patikang di Desa Citeureup adalah kawasan yang kaya akan potensi untuk kegiatan penelitian dan pengabdian masyarakat. Sebagai desa wisata berbasis konservasi dan pemberdayaan, kami membuka peluang kolaborasi dengan universitas dan institusi akademik untuk bersama-sama menciptakan dampak positif melalui ilmu pengetahuan dan aksi nyata.
+
+Lembur Mangrove percaya bahwa sinergi antara dunia akademik dan komunitas lokal dapat menjadi fondasi yang kuat untuk menciptakan perubahan berkelanjutan. Kami berkomitmen menyediakan fasilitas dan akses yang mendukung keberhasilan program penelitian dan pengabdian di kawasan ini.
+
+Jika universitas atau institusi Anda tertarik untuk bekerja sama, silakan hubungi kami melalui kontak resmi kami untuk informasi lebih lanjut. Bersama, mari kita tingkatkan pemahaman dan kontribusi terhadap pelestarian lingkungan dan kesejahteraan masyarakat di Lembur Mangrove.",
+                     "image"=>"research.jpg",
+                     "created_at"=>"2024-11-29 08:25:19",
+                     "updated_at"=>"2024-11-29 08:25:19"]
+                ]);
 
         Schema::enableForeignKeyConstraints();
 

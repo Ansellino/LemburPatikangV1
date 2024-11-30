@@ -650,23 +650,23 @@ padding: 50px 20px;
         <div class="container text-center">
             <div class="row justify-content-center align-items-center mb-4">
                 <div class="col-lg-2 col-md-3 col-4">
-                    <img src="images/exciting-banten-logo.png" alt="Exciting Banten" class="partner-logo">
+                    <img src="{{ URL::to('/assets/images/exciting-banten-logo.png') }}" alt="Exciting Banten" class="partner-logo">
                 </div>
                 <div class="col-lg-2 col-md-3 col-4">
-                    <img src="images/chandra-asri-logo.png" alt="Chandra Asri" class="partner-logo">
+                    <img src="{{ URL::to('/assets/images/chandra-asri-logo.png') }}" alt="Chandra Asri" class="partner-logo">
                 </div>
                 <div class="col-lg-2 col-md-3 col-4">
-                    <img src="images/pokdarwis-pandeglang-logo.png" alt="Pokdarwis Pandeglang" class="partner-logo">
+                    <img src="{{ URL::to('/assets/images/pokdarwis-pandeglang-logo.png') }}" alt="Pokdarwis Pandeglang" class="partner-logo">
                 </div>
                 <div class="col-lg-2 col-md-3 col-4">
-                    <img src="images/tourism-logo.png" alt="Tourism Logo" class="partner-logo">
+                    <img src="{{ URL::to('/assets/images/tourism-logo.png') }}" alt="Tourism Logo" class="partner-logo">
                 </div>
                 <div class="col-lg-2 col-md-3 col-4">
-                    <img src="images/kia-logo.png" alt="KIA Logo" class="partner-logo">
+                    <img src="{{ URL::to('/assets/images/kia-logo.png') }}" alt="KIA Logo" class="partner-logo">
                 </div>
             </div>
             <div class="contact-message">
-                <p>Kindly contact us for collaboration at <a href="mailto:agskjags@gmail.com">agskjags@gmail.com</a></p>
+                <p>Kindly contact us for collaboration at <a href="mailto:HELLO@LEMBURMANGROVE.com">HELLO@LEMBURMANGROVE.com</a></p>
             </div>
         </div>
     </section>
@@ -683,7 +683,7 @@ padding: 50px 20px;
                             <h3><a href="/post/{{$post->id}}" style="color: black;">{{ $post->title }}</a></h3>
                             <p>
                                 {{ \Illuminate\Support\Str::limit($post->description, 100) }}
-                                @if (strlen($post->description) > 100)
+                                @if (strlen($post->description) > 50)
                                     ... <a href="/post/{{$post->id}}">Read More</a>
                                 @endif
                             </p>
@@ -712,7 +712,7 @@ padding: 50px 20px;
                 <div class="col-lg-6 col-md-6">
                     <div class="contact-box">
                         <h2>hubungi kami</h2>
-                        <form action="#" method="POST">
+                        <form action="mailto:HELLO@LEMBURMANGROVE.com" method="POST">
                             <div class="form-group">
                                 <input type="text" name="name" placeholder="Insert Name" class="form-control" required>
                             </div>
@@ -732,6 +732,9 @@ padding: 50px 20px;
                                 <textarea name="message" placeholder="Message" class="form-control" rows="4" required></textarea>
                             </div>
                             <button type="submit" class="btn btn-primary">SEND</button>
+                            {{-- <div class="contact-message">
+                            <a href="mailto:HELLO@LEMBURMANGROVE.com"> SEND</a>
+                            </div> --}}
                         </form>
                     </div>
                 </div>

@@ -30,4 +30,8 @@ class welcome extends Controller
         $post = articles::where('id',$id)->first();
         return view('post',['post'=>$post]);
     }
+
+    public function contactus(){
+        return view('contactus');
+    }
 }
