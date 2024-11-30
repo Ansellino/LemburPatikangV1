@@ -56,40 +56,6 @@ body, html {
     color: #333;
     text-decoration: none;
   }
-/* Section Background */
-.research-dedication-section {
-  padding: 60px 20px;
-  background-color: #f5f5f5;
-}
-
-/* Header Section */
-.header-section {
-  position: relative;
-  margin-bottom: 40px;
-}
-
-.header-section .header-background {
-  background : url('{{ URL::to('/assets/images/research-header.jpg') }}') no-repeat center center/cover;
-  background-size: cover;
-  background-position: center;
-  height: 200px;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-}
-
-.header-section h2 {
-  font-size: 2.5rem;
-  font-weight: bold;
-}
-
-.header-section p {
-  font-size: 1.2rem;
-}
 
 /* CSR Section */
 .csr-section {
@@ -99,7 +65,7 @@ body, html {
 
 /* Header Section */
 .header-background {
-  background-image: url('images/csr-header.jpg');
+  background : url('{{ URL::to('/assets/images/research-header.jpg') }}') no-repeat center center/cover;
   background-size: cover;
   background-position: center;
   height: 250px;
@@ -172,26 +138,50 @@ body, html {
   color: #555;
 }
 
-/* Call to Action */
-.btn-contact {
-  background-color: #f4a261;
+/* CTA Section Styling */
+.cta-section {
+  position: relative;
+  padding: 60px 0;
   color: white;
+  text-align: center;
+}
+
+.cta-background {
+background : url('{{ URL::to('/assets/images/csr-header.jpg') }}') no-repeat center center/cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 20px;
+}
+
+.cta-background h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  background-color: rgba(255, 165, 0, 0.8); /* Orange background with opacity */
+  display: inline-block;
   padding: 10px 20px;
   border-radius: 5px;
-  text-decoration: none;
-  font-size: 1rem;
-  font-weight: bold;
 }
 
-.btn-contact:hover {
-  background-color: #e76f51;
+.cta-background p {
+  font-size: 1.2rem;
+  margin-top: 15px;
+  background-color: rgba(255, 165, 0, 0.8);
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.cta-background a {
   color: white;
+  text-decoration: none;
 }
 
-a {
-  color: #4b644a;
+.cta-background a:hover {
   text-decoration: underline;
 }
+
 
     /* Footer */
     .footer {
@@ -281,17 +271,14 @@ a {
             </div>
           </div>
 
-          <!-- Call to Action Section -->
-          <div class="cta-section text-center mt-5">
-            <a href="https://wa.me/62817849463" class="btn btn-contact">
-              Click Here to Chat Pak Deden at +62 817-849-463
-            </a>
-            <p class="mt-3">
-              Email us at <a href="mailto:hello@lemburmangrove.com">hello@lemburmangrove.com</a>
-            </p>
-          </div>
-        </div>
-      </section>
+          <section class="cta-section">
+            <div class="cta-background">
+              <div class="container text-center">
+                <h2>Click Here to Chat Pak Deden on +62 817-849-463</h2>
+                <p>Email Us at <a href="mailto:hello@lemburmangrove.com">hello@lemburmangrove.com</a></p>
+              </div>
+            </div>
+          </section>
 
         <!-- Bootstrap Bundle JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
