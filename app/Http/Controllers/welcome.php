@@ -27,7 +27,7 @@ class welcome extends Controller
         return view('category',['post'=>$post,'category'=>$category]);
     }
     public function post($id){
- $post = articles::where('id',$id)->first();
+        $post = articles::where('id',$id)->first();
         return view('post',['post'=>$post]);
     }
 }

@@ -6,7 +6,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
 
   <title>About Us - Lembur Mangrove</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -92,14 +92,14 @@
       font-size: 1.8rem;
       font-weight: bold;
       margin-bottom: 15px;
-      color: #333;
+      color: white;
     }
 
     .about-content p {
       margin-bottom: 15px;
       line-height: 1.8;
       font-size: 1.1rem;
-      color: #333;
+      color: white;
     }
 
     .info-box {
@@ -227,6 +227,7 @@
     .footer-link:hover {
       text-decoration: underline;
     }
+
   </style>
 </head>
 
@@ -312,7 +313,7 @@
   <section class="offer-section">
     <div class="container text-center">
       <h2>What We Offer?</h2>
-      
+
       <div class="row mt-4">
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="offer-card">
@@ -347,14 +348,6 @@
       </div>
     </div>
   </section>
-
-  <footer class="footer">
-    <div class="container text-center">
-      <a href="#" class="footer-link">Refund Policy</a>
-      <a href="#" class="footer-link">Privacy Policy</a>
-      <a href="#" class="footer-link">Indikator Pengunjung</a>
-    </div>
-  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>

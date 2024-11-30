@@ -68,3 +68,28 @@ background-color: blue;
     color: black !important;
 }
     #more  {display:  none;}
+
+.logo {
+    height: 60px;
+}
+
+/* Footer */
+.footer {
+    background-color: #5E7153;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: auto;
+    /* Ensure footer stays at the bottom */
+}
+
+.footer-link {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}

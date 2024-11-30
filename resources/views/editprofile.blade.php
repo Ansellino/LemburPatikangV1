@@ -1,14 +1,14 @@
 @extends('layouts.app')
 
 @auth
-@if (Auth::user()->role=="member")  
+@if (Auth::user()->role=="member")
 @section('content')
 {{-- MULAI DARI SINI --}}
 <div class="card-body">
     <form method="POST" action="{{ route('editedprofil') }}">
         @csrf
 
-        <div class="form-group row">
+        <div class="form-group row" style="color: white;">
             <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
 
             <div class="col-md-6">
@@ -23,7 +23,7 @@
             </div>
         </div>
 
-        <div class="form-group row">
+        <div class="form-group row" style="color: white;">
             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
 
             <div class="col-md-6">
@@ -37,7 +37,7 @@
             </div>
         </div>
 
-        <div class="form-group row">
+        <div class="form-group row" style="color: white;">
             <label for="phone" class="col-md-4 col-form-label text-md-right">{{ __('Phone Number') }}</label>
 
             <div class="col-md-6">

@@ -29,12 +29,14 @@
     <img src="{{ URL::asset('assets/images/image1.jpg')}}" alt="image logo"> --}}
 </div>
     <div class="navigation-bar">
-        <nav class="navbar navbar-expand-md navbar-light bg-dark shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-light shadow-sm" style="background-color: #fcfce4;">
             <div class="container">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
+                <a class="navbar-brand" href="#">
+                    <img src="{{ URL::to('/assets/images/logo-website.png') }}" alt="Logo" class="logo">
+                  </a>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
@@ -59,6 +61,9 @@
 @endif
 @endauth
 @guest
+                        <a class="nav-link" href="{{ url('/aboutus') }}">
+                            About us
+                        </a>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Category</a>
                             <div class="dropdown-menu">
@@ -71,9 +76,6 @@
                               <a class="dropdown-item" href="/category/6">Others</a>
                             </div>
                           </li>
-                        <a class="nav-link" href="{{ url('/aboutus') }}">
-                            About us
-                        </a>
                         @endguest
                     </ul>
 
@@ -118,5 +120,12 @@
             @yield('content')
         </main>
     </div>
+    <footer class="footer">
+        <div class="container text-center">
+            <a href="#" class="footer-link">Refund Policy</a>
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="#" class="footer-link">Indikator Pengunjung</a>
+        </div>
+    </footer>
 </body>
 </html>

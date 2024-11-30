@@ -7,11 +7,11 @@
 <html lang="en">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lembur   
+    <title>Lembur  
    Mangrove</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="home.css">   
-  
+    <link rel="stylesheet" href="home.css">  
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <style>
       /* General Styles */
@@ -23,14 +23,14 @@
         display: flex;
         flex-direction: column;
       }
-  
+
       /* Page Wrapper for sticky footer */
       .page-wrapper {
         flex: 1;
         display: flex;
         flex-direction: column;
       }
-  
+
       /* Header */
       .main-header {
         width: 100%;
@@ -38,15 +38,15 @@
         background-color: #fcfce6;
         border-bottom: 1px solid #ddd;
       }
-  
+
       .custom-navbar {
         padding: 10px 0;
       }
-  
+
       .logo {
         height: 60px;
       }
-  
+
       .navbar-nav .nav-link {
         font-size: 1rem;
         font-weight: 600;
@@ -54,12 +54,12 @@
         margin: 0 15px;
         text-transform: uppercase;
       }
-  
+
       .navbar-nav .nav-link:hover {
         color: #333;
         text-decoration: none;
       }
-  
+
       /* Auth Buttons in Hero Section */
       .auth-buttons {
         position: absolute;
@@ -68,7 +68,7 @@
         display: flex;
         gap: 10px;
       }
-  
+
       .auth-buttons .btn-login,
       .auth-buttons .btn-signup {
         padding: 8px 15px;
@@ -78,19 +78,19 @@
         text-transform: uppercase;
         text-decoration: none;
       }
-  
+
       .auth-buttons .btn-login {
         background-color: #a65325;
         /* Oranye kecokelatan */
         color: white;
         border: none;
       }
-  
+
       .auth-buttons .btn-login:hover {
         background-color: #883e1a;
         /* Warna hover lebih gelap */
       }
-  
+
       .auth-buttons .btn-signup {
         background-color: #a65325;
         /* Tombol putih */
@@ -98,12 +98,12 @@
         /* Teks oranye kecokelatan */
         border: 2px solid #a65325;
       }
-  
+
       .auth-buttons .btn-signup:hover {
         background-color: #883e1a;
         color: white;
       }
-  
+
       /* Hero Section */
       .hero-section {
         background: url('images/mangrove-background.jpg') no-repeat center center/cover;
@@ -114,7 +114,7 @@
         justify-content: center;
         position: relative;
       }
-  
+
       .hero-overlay {
         background-color: rgba(0, 0, 0, 0.5);
         /* Semi-transparent overlay */
@@ -125,19 +125,19 @@
         justify-content: center;
         padding: 20px;
       }
-  
+
       .hero-section h1 {
         font-size: 3rem;
         font-weight: bold;
         text-transform: uppercase;
         margin-bottom: 10px;
       }
-  
+
       .subtitle {
         font-size: 1.5rem;
         margin-bottom: 20px;
       }
-  
+
       .btn-primary {
         background-color: #a65325;
         color: white;
@@ -148,42 +148,42 @@
         font-weight: bold;
         border-radius: 5px;
       }
-  
+
       .btn-primary:hover {
         background-color: #883e1a;
         text-decoration: none;
       }
-  
+
       .social-icons {
         display: flex;
         justify-content: center;
         gap: 20px;
       }
-  
+
       .social-icon {
         color: #f4f6f3;
         font-size: 1.5rem;
         transition: color 0.3s ease;
       }
-  
+
       .social-icon:hover {
         color: #a65325;
       }
-  
+
       /* Visitor Indicator Section */
       .visitor-indicator-section {
         background: url('images/mangrove-indicator.jpg') no-repeat center center/cover;
         padding: 60px 20px;
         color: white;
       }
-  
+
       .section-title {
         font-size: 1.5rem;
         font-weight: bold;
         color: #fcfce6;
         margin-bottom: 20px;
       }
-  
+
       .indicator-item {
         background-color: rgba(0, 0, 0, 0.6);
         /* Semi-transparan hitam */
@@ -191,25 +191,25 @@
         border-radius: 8px;
         margin-bottom: 20px;
       }
-  
+
       .indicator-item p {
         font-size: 1.2rem;
         line-height: 1.8;
         margin-bottom: 15px;
       }
-  
+
       .indicator-item h1 {
         font-size: 2.5rem;
         font-weight: bold;
         margin-bottom: 10px;
       }
-  
+
       .indicator-item .source {
         font-size: 1rem;
         font-style: italic;
         color: #ddd;
       }
-  
+
       /* Locals Grow Section */
       .locals-grow-section {
         background-color: #d7dfd0;
@@ -217,20 +217,20 @@
         padding: 60px 20px;
         color: #333;
       }
-  
+
       .locals-grow-section .section-title {
         font-size: 2rem;
         font-weight: bold;
         color: #333;
         margin-bottom: 15px;
       }
-  
+
       .locals-grow-section .section-subtitle {
         font-size: 1.2rem;
         color: #555;
         margin-bottom: 30px;
       }
-  
+
       .locals-card {
         background-color: #fff;
         padding: 20px;
@@ -239,11 +239,11 @@
         text-align: center;
         transition: transform 0.3s ease;
       }
-  
+
       .locals-card:hover {
         transform: translateY(-10px);
       }
-  
+
       .locals-card img {
         max-width: 100%;
         height: 150px;
@@ -251,20 +251,20 @@
         border-radius: 10px;
         margin-bottom: 15px;
       }
-  
+
       .locals-card h3 {
         font-size: 1.5rem;
         color: #a65325;
         /* Warna oranye kecokelatan */
         margin-bottom: 10px;
       }
-  
+
       .locals-card p {
         font-size: 1rem;
         color: #555;
         line-height: 1.6;
       }
-  
+
       /* Collaboration Section */
       .collaboration-section {
         background: url('images/mangrove-background.jpg') no-repeat center center/cover;
@@ -275,7 +275,7 @@
         justify-content: center;
         position: relative;
       }
-  
+
       .collaboration-overlay {
         background-color: rgba(0, 0, 0, 0.5);
         /* Semi-transparent black overlay */
@@ -285,7 +285,7 @@
         align-items: center;
         justify-content: center;
       }
-  
+
       .collaboration-title {
         font-size: 2.5rem;
         font-weight: bold;
@@ -293,14 +293,14 @@
         text-transform: uppercase;
         margin: 0;
       }
-  
+
       /* Partners Section */
       .partners-section {
         background-color: #edf2e5;
         /* Light green background */
         padding: 40px 20px;
       }
-  
+
       .partner-logo {
         max-width: 100%;
         height: auto;
@@ -308,14 +308,14 @@
         display: block;
         padding: 10px;
       }
-  
+
       .contact-message {
         margin-top: 20px;
         font-size: 1.1rem;
         color: #a65325;
         font-weight: bold;
       }
-  
+
       .contact-message a {
         color: white;
         background-color: #a65325;
@@ -323,11 +323,11 @@
         border-radius: 5px;
         text-decoration: none;
       }
-  
+
       .contact-message a:hover {
         background-color: #883e1a;
       }
-  
+
       /* Blogs & News Section */
       .blogs-news-section {
         background-color: #d7dfd0;
@@ -335,14 +335,14 @@
         padding: 60px 20px;
         color: #333;
       }
-  
+
       .blogs-news-section .section-title {
         font-size: 2rem;
         font-weight: bold;
         margin-bottom: 30px;
         color: #333;
       }
-  
+
       .blog-card,
       .news-card {
         background-color: #fff;
@@ -352,12 +352,12 @@
         text-align: left;
         transition: transform 0.3s ease;
       }
-  
+
       .blog-card:hover,
       .news-card:hover {
         transform: translateY(-10px);
       }
-  
+
       .blog-card img,
       .news-card img {
         width: 100%;
@@ -366,7 +366,7 @@
         border-radius: 10px;
         margin-bottom: 15px;
       }
-  
+
       .blog-card h3,
       .news-card h3 {
         font-size: 1.5rem;
@@ -375,60 +375,60 @@
         /* Brownish-orange for titles */
         margin-bottom: 10px;
       }
-  
+
       .blog-card p,
       .news-card p {
         font-size: 1rem;
         color: #555;
         line-height: 1.6;
       }
-  
+
       /* About and Contact Section */
       .about-contact-section {
         background: url('images/mangrove-background.jpg') no-repeat center center/cover;
         padding: 60px 20px;
         color: white;
       }
-  
+
       .about-box {
         background-color: rgba(0, 0, 0, 0.6);
         padding: 20px;
         border-radius: 10px;
       }
-  
+
       .about-box h2 {
         font-size: 2rem;
         font-weight: bold;
         margin-bottom: 20px;
       }
-  
+
       .about-box p {
         font-size: 1rem;
         margin-bottom: 15px;
       }
-  
+
       .about-box i {
         margin-right: 10px;
         color: #f4a261;
         /* Icon color */
       }
-  
+
       .contact-box {
         background-color: rgba(0, 0, 0, 0.6);
         padding: 20px;
         border-radius: 10px;
       }
-  
+
       .contact-box h2 {
         font-size: 2rem;
         font-weight: bold;
         margin-bottom: 20px;
       }
-  
+
       .form-group {
         margin-bottom: 15px;
       }
-  
+
       .form-control {
         background: rgba(255, 255, 255, 0.9);
         border: none;
@@ -437,12 +437,12 @@
         border-radius: 5px;
         width: 100%;
       }
-  
+
       .form-control:focus {
         outline: none;
         box-shadow: 0 0 5px rgba(255, 165, 0, 0.8);
       }
-  
+
       .btn-primary {
         background-color: #f4a261;
         color: white;
@@ -453,11 +453,11 @@
         cursor: pointer;
         transition: background-color 0.3s ease;
       }
-  
+
       .btn-primary:hover {
         background-color: #e76f51;
       }
-  
+
       /* Footer */
       .footer {
         background-color: #4b634e;
@@ -467,23 +467,23 @@
         margin-top: auto;
         /* Ensure footer stays at the bottom */
       }
-  
+
       .footer-link {
         color: white;
         margin: 0 10px;
         text-decoration: none;
         font-size: 0.9rem;
       }
-  
+
       .footer-link:hover {
         text-decoration: underline;
       }
     </style>
   </head>
-  
+
 <body>
 
-    <section class="hero-section"> 
+    <section class="hero-section">
         <div class="hero-overlay">
             <div class="container text-center text-white">
                 <h1>Welcome To Patikang</h1>
@@ -601,19 +601,19 @@
     </section>
 
     <section class="blogs-news-section">
-        <div class="container"> 
+        <div class="container">
             <h2 class="section-title text-center">Our Latest Blogs & News</h2>
             <div class="row mt-4">
-                @foreach ($post as $post) 
+                @foreach ($post as $post)
                     <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="blog-card"> 
+                        <div class="blog-card">
                             <img src="{{ URL::to('/assets/images/'.$post->image) }}" alt="{{ $post->title }}" class="img-fluid rounded">
 
                             <h3><a href="/post/{{$post->id}}" style="color: black;">{{ $post->title }}</a></h3>
                             <p>
-                                {{ \Illuminate\Support\Str::limit($post->description, 100) }} 
+                                {{ \Illuminate\Support\Str::limit($post->description, 100) }}
                                 @if (strlen($post->description) > 100)
-                                    ... <a href="/post/{{$post->id}}">Read More</a> 
+                                    ... <a href="/post/{{$post->id}}">Read More</a>
                                 @endif
                             </p>
                             <p><i>Category: </i><a href="/category/{{$post->category->id}}">{{$post->category->name}}</a></p>
@@ -667,14 +667,6 @@
             </div>
         </div>
     </section>
-
-    <footer class="footer">
-        <div class="container text-center">
-            <a href="#" class="footer-link">Refund Policy</a>
-            <a href="#" class="footer-link">Privacy Policy</a>
-            <a href="#" class="footer-link">Indikator Pengunjung</a>
-        </div>
-    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>

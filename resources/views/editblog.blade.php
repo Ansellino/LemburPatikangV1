@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @auth
-@if (Auth::user()->role=="member")  
+@if (Auth::user()->role=="member")
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
@@ -49,26 +49,26 @@
                                 <input id="image" name="image" class="input-file" type="file" value="{{$articles->image}}">
                             </div>
                             @error('image')
-                                <label class="col-md-4 col-sm-5 control-label" for="image"></label>  
+                                <label class="col-md-4 col-sm-5 control-label" for="image"></label>
                                 <span class="col-md-5 col-sm-6 invalid-feedback" role="alert">
                                     <p>{{ $message }}</p>
                                 </span>
                             @enderror
                         </div>
-                        
+
                         <div class="form-group row">
-                            <label class="col-md-4 col-form-label text-md-right" for="description">Description</label>  
+                            <label class="col-md-4 col-form-label text-md-right" for="description">Description</label>
                             <div class="col-md-5 col-sm-6">
-                                <textarea id="textarea" name="textarea" type="text" placeholder="Description" class="form-control input-md">{{$articles->description}}</textarea>   
+                                <textarea id="textarea" name="textarea" type="text" placeholder="Description" class="form-control input-md">{{$articles->description}}</textarea>
                             </div>
                             @error('textarea')
-                                <label class="col-md-4 col-sm-5 control-label" for="textarea"></label>  
+                                <label class="col-md-4 col-sm-5 control-label" for="textarea"></label>
                                 <span class="col-md-5 col-sm-6 invalid-feedback" role="alert">
                                     <p>{{ $message }}</p>
                                 </span>
                             @enderror
                         </div>
-                        
+
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
