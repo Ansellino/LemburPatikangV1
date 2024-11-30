@@ -67,11 +67,11 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Category</a>
                             <div class="dropdown-menu">
-                              <a class="dropdown-item" href="/category/1">Contact</a>
-                              <a class="dropdown-item" href="/category/2">Pembayaran</a>
+                              <a class="dropdown-item" href="/category/1">CSR Program</a>
+                              <a class="dropdown-item" href="/category/2">Research and Dedication</a>
                               <a class="dropdown-item" href="/category/3">Product and Tours</a>
                               <a class="dropdown-item" href="/category/4">News and Blog</a>
-                              <a class="dropdown-item" href="/category/5">Indicator Pengunjung</a>
+                              <a class="dropdown-item" href="/category/5">Update Website</a>
                               <div class="dropdown-divider"></div>
                               <a class="dropdown-item" href="/category/6">Others</a>
                             </div>

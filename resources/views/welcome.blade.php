@@ -458,6 +458,51 @@
         background-color: #e76f51;
       }
 
+/* Procedure Section */
+.procedure-section {
+background-color: #edf2e5; /* Light green background */
+padding: 50px 20px;
+}
+
+.procedure-box {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.procedure-box h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #4b644a;
+}
+
+.procedure-list {
+  list-style-type: decimal;
+  padding-left: 20px;
+  line-height: 1.8;
+  color: #333;
+}
+
+.procedure-list li {
+  margin-bottom: 15px;
+}
+
+.procedure-list b {
+  color: #4b644a; /* Highlighted text */
+}
+
+.procedure-list ul {
+  list-style-type: disc;
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.procedure-list ul li {
+  margin-bottom: 5px;
+}
+
       /* Footer */
       .footer {
         background-color: #4b634e;
@@ -566,6 +611,32 @@
             </div>
         </div>
     </section>
+
+    <section class="procedure-section">
+        <div class="container">
+          <div class="procedure-box">
+            <h2>Prosedur Pendaftaran & Pembayaran</h2>
+            <ol class="procedure-list">
+              <li>
+                <b>Pilih Paket atau Produk.</b> Silakan pilih paket tour atau produk yang Anda inginkan.
+              </li>
+              <li>
+                <b>Hubungi WhatsApp untuk Pembayaran.</b> Untuk melanjutkan pembayaran, hubungi kami melalui nomor WhatsApp berikut: <b>0817849463 (Deden)</b>.
+              </li>
+              <li>
+                Ketika menghubungi nomor WhatsApp tersebut, harap sertakan format berikut:
+                <ul>
+                  <li><b>Nama:</b></li>
+                  <li><b>Paket/Produk yang diinginkan:</b></li>
+                </ul>
+              </li>
+              <li>
+                <b>Pembayaran Melalui QRIS.</b> Setelah konfirmasi, Anda akan menerima QRIS yang dapat digunakan untuk melakukan pembayaran sesuai dengan harga paket atau produk yang Anda pilih.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
 
     <section class="collaboration-section">
         <div class="collaboration-overlay">
