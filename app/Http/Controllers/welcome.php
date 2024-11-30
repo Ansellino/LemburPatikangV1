@@ -19,7 +19,8 @@ class welcome extends Controller
         return view('welcome',['post'=>$post]);
     }
     public function aboutus(){
-        return view('aboutus');
+        $post = articles::where('category_id', 4)->get(); // Fetch posts with category_id 4
+        return view('aboutus', ['post' => $post]);
     }
     public function category($id){
         $post = articles::with('Category')->where('category_id',$id)->get();
@@ -33,5 +34,10 @@ class welcome extends Controller
 
     public function contactus(){
         return view('contactus');
+    }
+
+    public function testing(){
+        $post = articles::where('category_id', 4)->get(); // Fetch posts with category_id 4
+        return view('testing', ['post' => $post]);
     }
 }
