@@ -32,6 +32,7 @@ Route::get('/informationuser/{id}','HomeController@informationuser')->name('info
 
 
 Route::get('/aboutus','welcome@aboutus')->name('aboutus');
+Route::get('contactus', 'welcome@contactus')->name('contactus');
 Route::get('/category/{id}','welcome@category')->name('category');
 Route::get('/post/{id}','welcome@post')->name('post');
 Route::get('/', 'welcome@indexshow')->name('homeshow');

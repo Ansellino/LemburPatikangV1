@@ -14,20 +14,28 @@ use Illuminate\Support\Facades\DB;
 
 class welcome extends Controller
 {
-    public function indexshow(){
+    public function indexshow()
+    {
         $post = articles::with('Category')->get();
-        return view('welcome',['post'=>$post]);
+        return view('welcome', ['post' => $post]);
     }
-    public function aboutus(){
+    public function aboutus()
+    {
         return view('aboutus');
     }
-    public function category($id){
-        $post = articles::with('Category')->where('category_id',$id)->get();
-        $category = categories::where('id',$id)->first();
-        return view('category',['post'=>$post,'category'=>$category]);
+    public function category($id)
+    {
+        $post = articles::with('Category')->where('category_id', $id)->get();
+        $category = categories::where('id', $id)->first();
+        return view('category', ['post' => $post, 'category' => $category]);
     }
-    public function post($id){
- $post = articles::where('id',$id)->first();
-        return view('post',['post'=>$post]);
+    public function post($id)
+    {
+        $post = articles::where('id', $id)->first();
+        return view('post', ['post' => $post]);
+    }
+    public function contactus()
+    {
+        return view('contactus');
     }
 }

@@ -1,0 +1,11 @@
+html, body {
+    color: #222222;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../images/image1.jpg');
+}
