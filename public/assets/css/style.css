@@ -1,0 +1,96 @@
+html, body {
+    /*background-color: black;*/
+    color: #222222;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    height: 100vh;
+    margin: 0;
+    background-image: url('../images/image1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.full-height {
+    height: 100vh;
+}
+.flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.position-ref {
+    position: relative;
+}
+
+.top-right {
+    position: absolute;
+    right: 10px;
+    top: 18px;
+    background-color: blue;
+}
+
+.content {
+    text-align: center;
+}
+
+.title {
+    color:  #0000;
+    font-size: 54px;
+}
+
+h3{
+    color: #222222;
+
+}
+
+.links > a {
+    color: #222222;
+    padding: 0 25px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.m-b-md {
+    margin-bottom: 30px;
+}
+
+#title-atas {
+text-align: center;
+background-color: blue;
+}
+
+/*warna font nav-bar*/
+.nav-link {
+    color: black !important;
+}
+    #more  {display:  none;}
+
+.logo {
+    height: 60px;
+}
+
+/* Footer */
+.footer {
+    background-color: #5E7153;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: auto;
+    /* Ensure footer stays at the bottom */
+}
+
+.footer-link {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
