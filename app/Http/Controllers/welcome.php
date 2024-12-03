@@ -27,9 +27,9 @@ class welcome extends Controller
         $category = categories::where('id',$id)->first();
         return view('category',['post'=>$post,'category'=>$category]);
     }
-    public function post($id){
-        $post = articles::where('id',$id)->first();
-        return view('post',['post'=>$post]);
+    public function post($id) {
+        $post = Articles::with('user')->find($id);
+        return view('post', ['post' => $post]);
     }
 
     public function contactus(){

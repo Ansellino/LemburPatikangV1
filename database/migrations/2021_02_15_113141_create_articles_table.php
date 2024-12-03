@@ -19,7 +19,12 @@ class CreateArticlesTable extends Migration
             $table->foreignId('category_id');
             $table->string('title');
             $table->longText('description');
-            $table->string('image');
+            $table->string('image')->nullable(); // Allow null in case there's no image initially
+            $table->string('lowprice')->nullable(); // Use decimal for prices for accuracy
+            $table->string('highprice')->nullable();
+            $table->string('ukuran')->nullable();
+            $table->text('penjelasan')->nullable(); // Allow longer explanations and null
+            $table->string('tags')->nullable(); // Tags might be optional
             $table->timestamps();
         });
     }

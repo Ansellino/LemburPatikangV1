@@ -34,7 +34,7 @@ class HomeController extends Controller
     {
         return view('home');
     }
- 
+
     public function profile(){
         $user = Auth::user();
 
@@ -60,7 +60,7 @@ class HomeController extends Controller
         $articles = articles::with('User')->where('user_id',$user->id)->get();
         return view('blog',['articles'=>$articles]);
     }
-    
+
     public function editblog($id){
         $user = Auth::user();
         $category = categories::all();
@@ -92,12 +92,16 @@ class HomeController extends Controller
           $articles->title = $request->title;
           $articles->description = $request->textarea;
           $articles->image = $name;
+          $articles->tags = $request->tags;
+          $articles->lowprice = $request->lowprice;
+          $articles->highprice = $request->highprice;
           $articles->save();
-        
+
           $user = Auth::user();
           $articles = articles::with('User')->where('user_id',$user->id)->get();
           return view('blog',['articles'=>$articles]);
     }
+
     public function deleteblog($id){
         $articles = articles::where('id',$id)->first();
         $articles->delete();
@@ -128,7 +132,7 @@ $check = $request->hasFile('image');
             $articles->description = $request->textarea;
             $articles->image = $name;
             $articles->save();
-            
+
         }else{
             $articles = articles::where('id', $id)->first();
             $articles->user_id = $user->id;

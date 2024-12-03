@@ -69,6 +69,19 @@
                             @enderror
                         </div>
 
+                        <div class="form-group row">
+                            <label class="col-md-4 col-form-label text-md-right" for="tags">Tags</label>
+                            <div class="col-md-5 col-sm-6">
+                                <textarea id="textarea1" name="textarea1" type="text" placeholder="Tags" class="form-control input-md">{{$articles->tags}}</textarea>
+                            </div>
+                            @error('tags')
+                                <label class="col-md-4 col-sm-5 control-label" for="tags"></label>
+                                <span class="col-md-5 col-sm-6 invalid-feedback" role="alert">
+                                    <p>{{ $message }}</p>
+                                </span>
+                            @enderror
+                        </div>
+
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
