@@ -51,12 +51,14 @@ class DatabaseSeeder extends Seeder
                      "image"=>"petualangan-laut.jpg",
                      "created_at"=>"2024-11-29 08:25:19",
                      "updated_at"=>"2024-11-29 08:25:19"]
-                ]); DB::table('articles')->insert([
+                ]);
+                DB::table('articles')->insert([
                     ["user_id" => "2",
                      "category_id"=>"4",
                      "title"=>"Pengalaman Edukasi",
                      "description"=>"Ambil bagian dalam kegiatan seperti penanaman mangrove dan pelatihan tentang praktik berkelanjutan yang mendukung lingkungan dan masyarakat.",
                      "image"=>"pengalaman-edukasi.jpg",
+                     "tags"=>"#laut #pencinta alam #petualangan #snorkeling",
                      "created_at"=>"2024-11-29 08:25:19",
                      "updated_at"=>"2024-11-29 08:25:19"]
                 ]);
