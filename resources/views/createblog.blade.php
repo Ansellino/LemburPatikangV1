@@ -127,16 +127,6 @@
                 <div class="col-md-6">
                     <input id="highprice" type="text" class="form-control" name="highprice">
                 </div>
-
-                <label for="penjelasan" class="col-md-4 col-form-label text-md-right">Penjelasan produk</label>
-                <div class="col-md-6">
-                    <input id="penjelasan" type="text" class="form-control" name="penjelasan">
-                </div>
-
-                <label for="ukuran" class="col-md-4 col-form-label text-md-right">Ukuran (Besar / Kecil)</label>
-                <div class="col-md-6">
-                    <input id="ukuran" type="text" class="form-control" name="ukuran">
-                </div>
             `;
         } else {
             additionalFields.innerHTML = '';
