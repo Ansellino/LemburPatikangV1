@@ -74,23 +74,25 @@ background-color: blue;
     height: 60px;
 }
 
-/* Footer */
 .footer {
-    background-color: #5E7153;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    bottom: 0;
+    background-color: #4b634e;
     color: white;
     padding: 10px 0;
     text-align: center;
     margin-top: auto;
-    /* Ensure footer stays at the bottom */
-}
+  }
 
-.footer-link {
+  .footer-link {
     color: white;
     margin: 0 10px;
     text-decoration: none;
     font-size: 0.9rem;
-}
+  }
 
-.footer-link:hover {
+  .footer-link:hover {
     text-decoration: underline;
-}
+  }
