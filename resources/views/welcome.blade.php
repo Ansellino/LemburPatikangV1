@@ -172,7 +172,7 @@
 
       /* Visitor Indicator Section */
       .visitor-indicator-section {
-        background: url('images/mangrove-indicator.jpg') no-repeat center center/cover;
+        background: url('assets/images/mangrove-indicator.jpg') no-repeat center center/cover;
         padding: 60px 20px;
         color: white;
       }
