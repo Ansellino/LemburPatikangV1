@@ -14,8 +14,8 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <style>
-      /* General Styles */
-      body,
+       /* General Styles */
+       body,
       html {
         margin: 0;
         padding: 0;
@@ -107,23 +107,12 @@
       /* Hero Section */
       .hero-section {
         background: url('images/mangrove-background.jpg') no-repeat center center/cover;
-        height: 100vh;
+        height: 88vh;
         /* Full screen height */
         display: flex;
         align-items: center;
         justify-content: center;
         position: relative;
-      }
-
-      .hero-overlay {
-        background-color: rgba(0, 0, 0, 0.5);
-        /* Semi-transparent overlay */
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 20px;
       }
 
       .hero-section h1 {
@@ -162,7 +151,7 @@
 
       .social-icon {
         color: #f4f6f3;
-        font-size: 1.5rem;
+        font-size: 2rem;
         transition: color 0.3s ease;
       }
 
@@ -172,7 +161,7 @@
 
       /* Visitor Indicator Section */
       .visitor-indicator-section {
-        background: url('assets/images/mangrove-indicator.jpg') no-repeat center center/cover;
+        background-image: linear-gradient(#fefae0, #A9B388);
         padding: 60px 20px;
         color: white;
       }
@@ -180,7 +169,7 @@
       .section-title {
         font-size: 1.5rem;
         font-weight: bold;
-        color: #fcfce6;
+        color: #000;
         margin-bottom: 20px;
       }
 
@@ -212,7 +201,7 @@
 
       /* Locals Grow Section */
       .locals-grow-section {
-        background-color: #d7dfd0;
+        background-image: linear-gradient(#A9B388, #fefae0);
         /* Warna hijau pucat */
         padding: 60px 20px;
         color: #333;
@@ -233,7 +222,7 @@
 
       .locals-card {
         background-color: #fff;
-        padding: 20px;
+        padding: 16px;
         border-radius: 10px;
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         text-align: center;
@@ -253,6 +242,13 @@
       }
 
       .locals-card h3 {
+        font-size: 1.5rem;
+        color: #a65325;
+        /* Warna oranye kecokelatan */
+        margin-bottom: 20px;
+      }
+
+      .locals-card h3 .judulR {
         font-size: 1.5rem;
         color: #a65325;
         /* Warna oranye kecokelatan */
@@ -287,7 +283,7 @@
       }
 
       .collaboration-title {
-        font-size: 2.5rem;
+        font-size: 4rem;
         font-weight: bold;
         color: white;
         text-transform: uppercase;
@@ -296,7 +292,7 @@
 
       /* Partners Section */
       .partners-section {
-        background-color: #edf2e5;
+        background-color: #FEFAE0;
         /* Light green background */
         padding: 40px 20px;
       }
@@ -311,7 +307,7 @@
 
       .contact-message {
         margin-top: 20px;
-        font-size: 1.1rem;
+        font-size: 1.7rem;
         color: #a65325;
         font-weight: bold;
       }
@@ -324,23 +320,29 @@
         text-decoration: none;
       }
 
+      .contact-message p {
+        margin-top: -4px;
+        margin-bottom: 0rem;
+      }
+
       .contact-message a:hover {
         background-color: #883e1a;
       }
 
       /* Blogs & News Section */
       .blogs-news-section {
-        background-color: #d7dfd0;
+        background-image: linear-gradient(#fefae0, #A9B388);
         /* Light green background */
         padding: 60px 20px;
         color: #333;
       }
 
       .blogs-news-section .section-title {
-        font-size: 2rem;
+        font-size: 3rem;
         font-weight: bold;
         margin-bottom: 30px;
         color: #333;
+        font-family: poppins;
       }
 
       .blog-card,
@@ -385,7 +387,7 @@
 
       /* About and Contact Section */
       .about-contact-section {
-        background: url('images/mangrove-background.jpg') no-repeat center center/cover;
+        background-color: #A9B388;
         padding: 60px 20px;
         color: white;
       }
@@ -397,9 +399,10 @@
       }
 
       .about-box h2 {
-        font-size: 2rem;
+        font-size: 5rem;
         font-weight: bold;
         margin-bottom: 20px;
+        font-family: poppins;
       }
 
       .about-box p {
@@ -460,8 +463,8 @@
 
 /* Procedure Section */
 .procedure-section {
-background-color: #edf2e5; /* Light green background */
-padding: 50px 20px;
+background-color: #FEFAE0; /* Light green background */
+padding: 66px 20px;
 }
 
 .procedure-box {
@@ -472,17 +475,19 @@ padding: 50px 20px;
 }
 
 .procedure-box h2 {
-  font-size: 2rem;
+  font-size: 4rem;
   font-weight: bold;
   margin-bottom: 20px;
   color: #4b644a;
+  font-family: 'poppins';
 }
 
 .procedure-list {
   list-style-type: decimal;
   padding-left: 20px;
-  line-height: 1.8;
+  line-height: 1.2;
   color: #333;
+
 }
 
 .procedure-list li {
@@ -535,9 +540,9 @@ padding: 50px 20px;
                 <p class="subtitle">Lembur Mangrove, Desa Wisata Citeureup</p>
                 <a href="#" class="btn btn-primary">Look Out!</a>
                 <div class="social-icons mt-4">
-                    <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
-                    <a href="#" class="social-icon"><i class="bi bi-whatsapp"></i></a>
-                    <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.instagram.com/lembur_mangrove_patikang" class="social-icon"><i class="bi bi-instagram"></i></a>
+                    <a href="https://wa.me/+62817849463" class="social-icon"><i class="bi bi-whatsapp"></i></a>
+                    <a href="https://www.facebook.com/mangrovepatikang" class="social-icon"><i class="bi bi-facebook"></i></a>
                 </div>
             </div>
         </div>
@@ -575,7 +580,7 @@ padding: 50px 20px;
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="locals-card">
                         <img src="{{ URL::to('/assets/images/tour-packages.jpg') }}" alt="Tour Packages" class="img-fluid rounded">
-                        <h3>Tour Packages</h3>
+                        <a href="/category/1"> <h3>Tour Packages</h3> </a>
                         <p>
                             Paket Wisata lembur mangrove yang dengan konsep wisata edukasi, ekologi yang berkelanjutan bagi sosial ekonomi dan lingkungan.
                         </p>
@@ -584,7 +589,7 @@ padding: 50px 20px;
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="locals-card">
                         <img src="{{ URL::to('/assets/images/mangrove-products.jpg') }}" alt="Mangrove Products" class="img-fluid rounded">
-                        <h3>Mangrove Products</h3>
+                        <a href="/category/1"> <h3> Mangrove Products </h3> </a>
                         <p>
                             Program CSR perusahaan dalam perlindungan lingkungan di pesisir yang dapat meningkatkan daya beli masyarakat sekitar.
                         </p>
@@ -592,8 +597,8 @@ padding: 50px 20px;
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="locals-card">
-                        <img src="{{ URL::to('/assets/images/csr-programs.jpg') }}" alt="CSR Programs" class="img-fluid rounded">
-                        <h3>CSR Programs</h3>
+                        <img src="{{ URL::to('/assets/images/csr-program.png') }}" alt="CSR Programs" class="img-fluid rounded">
+                        <a href="{{ url('/csr')}}"><h3>CSR Programs</h3></a>
                         <p>
                             Membeli produk yang dihasilkan dari tanaman mangrove selain kayu dapat meningkatkan ekonomi masyarakat lokal.
                         </p>
@@ -602,7 +607,7 @@ padding: 50px 20px;
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="locals-card">
                         <img src="{{ URL::to('/assets/images/research-dedication.jpg') }}" alt="Research and Dedication" class="img-fluid rounded">
-                        <h3>Research and Dedication</h3>
+                        <a href="{{ url('/csr')}}"><h3>Research and Dedication</h3></a>
                         <p>
                             Penelitian dan pengabdian akademisi sangat dibutuhkan dalam keberlangsungan kehidupan masyarakat sekitar.
                         </p>
@@ -681,9 +686,9 @@ padding: 50px 20px;
                             <img src="{{ URL::to('/assets/images/'.$post->image) }}" alt="{{ $post->title }}" class="img-fluid rounded">
                             <h3><a href="/post/{{$post->id}}" style="color: black;">{{ $post->title }}</a></h3>
                             <p>
-                                {{ \Illuminate\Support\Str::limit($post->description, 30) }}
-                                @if (strlen($post->description) > 30)
-                                    ... <a href="/post/{{$post->id}}">Read More</a>
+                                {!! \Illuminate\Support\Str::limit($post->description, 50) !!}
+                                @if (strlen($post->description) > 50)
+                                    <a href="/post/{{$post->id}}">Read More</a>
                                 @endif
                             </p>
                             <p><i>Category: </i><a href="/category/{{$post->category->id}}">{{$post->category->name}}</a></p>

@@ -52,6 +52,13 @@
 .blog-post-content p {
     line-height: 1.6;
 }
+
+.post-image img { /* Or any more specific selector if needed */
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
 </style>
 </head>
 <body>
@@ -69,14 +76,16 @@
                                 <h2><a href="/post/{{ $post->id }}" style="color: black" >{{ $post->title }}</a></h2>
                                 @if ($post->image)
                                     <div class="post-image">
-                                        <img src="{{ asset('assets/images/' . $post->image) }}" alt="{{ $post->title }}" class="img-fluid">
+                                        <img src="{{ asset('assets/images/' . $post->image) }}" alt="{{ $post->title }}"  style="width: 100%; height: 200px; object-fit: cover;">
                                     </div>
                                 @endif
-                                <p>
-                                    {{ \Illuminate\Support\Str::limit($post->description, 85, '') }}
-                                    @if (strlen($post->description) > 85)
+                                @if ($post->category_id==1)
+                                <h4 class="text-success fw-bold">Rp.{{$post->lowprice}} - Rp.{{$post->highprice}}</h4>
+                                @endif
+                                    {!! \Illuminate\Support\Str::limit($post->description, 75, '') !!}
+                                    @if (strlen($post->description) > 75)
                                         <span id="dots">...<a href="/post/{{ $post->id }}">full story</a></span>
-                                        <span id="more">{{ \Illuminate\Support\Str::substr($post->description, 85) }}</span>
+                                        <span id="more">{ \Illuminate\Support\Str::substr($post->description, 75)}</span>
                                     @endif
                                 </p>
                                 <p><i>Category: </i><a href="/category/{{ $post->category->id }}">{{ $post->category->name }}</a></p>
