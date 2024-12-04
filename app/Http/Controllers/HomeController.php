@@ -95,6 +95,8 @@ class HomeController extends Controller
           $articles->tags = $request->tags;
           $articles->lowprice = $request->lowprice;
           $articles->highprice = $request->highprice;
+          $articles->penjelasan = $request->penjelasan;
+          $articles->tags = $request->tags;
           $articles->save();
 
           $user = Auth::user();
