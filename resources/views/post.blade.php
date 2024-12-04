@@ -129,8 +129,7 @@
                                 <h4 class="text-success fw-bold">Rp.{{$post->lowprice}} - Rp.{{$post->highprice}}</h4>
                                 <p><strong>Available variants:</strong></p>
                                 <ul>
-                                    {{$post->ukuran1}}
-                                    {{$post->ukuran2}}
+                                    <li>{{$post->ukuran}}</li>
                                 </ul>
                                 <a href="https://wa.me/082286411152" class="btn btn-success mt-3"><i class="bi bi-whatsapp"></i> Order Now!</a>
                                 <p class="mt-3">

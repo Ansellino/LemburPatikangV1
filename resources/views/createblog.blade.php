@@ -3,6 +3,15 @@
 @auth
 @if (Auth::user()->role=="member")
 @section('content')
+<style>
+#additionalFields .col-md-4 {
+  margin-bottom: 10px; /* Adjust spacing as needed */
+}
+
+#additionalFields .col-md-6 {
+  margin-bottom: 10px; /* Adjust spacing as needed */
+}
+</style>
 <div class="create-blog">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -118,14 +127,24 @@
 
         if (selectedCategoryId == 0) {
             additionalFields.innerHTML = `
-                <label for="lowprice" class="col-md-4 col-form-label text-md-right">Harga terendah</label>
-                <div class="col-md-6">
+                <label for="lowprice" class="col-md-4 col-form-label text-md-right">Harga terendah\n</label>
+                    <div class="col-md-6">
                     <input id="lowprice" type="text" class="form-control" name="lowprice">
                 </div>
 
                 <label for="highprice" class="col-md-4 col-form-label text-md-right">Harga tertinggi</label>
                 <div class="col-md-6">
                     <input id="highprice" type="text" class="form-control" name="highprice">
+                </div>
+
+                <label for="penjelasan" class="col-md-4 col-form-label text-md-right">Penjelasan</label>
+                <div class="col-md-6">
+                    <input id="penjelasan" type="text" class="form-control" name="penjelasan">
+                </div>
+
+                <label for="tags" class="col-md-4 col-form-label text-md-right">Tags</label>
+                <div class="col-md-6">
+                    <input id="tags" type="text" class="form-control" name="tags">
                 </div>
             `;
         } else {
