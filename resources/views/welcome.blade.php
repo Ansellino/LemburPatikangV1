@@ -113,6 +113,7 @@
         align-items: center;
         justify-content: center;
         position: relative;
+        margin-bottom: -30px;
       }
 
       .hero-section h1 {
@@ -390,6 +391,7 @@
         background-color: #A9B388;
         padding: 60px 20px;
         color: white;
+        margin-bottom: -60px;
       }
 
       .about-box {

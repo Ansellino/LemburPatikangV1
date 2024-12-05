@@ -12,7 +12,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product</title>
     <style>
-
 .product-detail {
     background-color: none;
 }
@@ -27,10 +26,25 @@
     color: #555;
 }
 
+.description-product{
+    text-align: justify;
+}
+
 .title-product-service {
   background: url('{{ URL::to('/assets/images/lembur-mangrove-products.jpg') }}') no-repeat center center/cover;
-  text-align: center; /* Center the text */
-  padding: 100px 20px; /* Add some padding for better readability */
+  text-align: center;
+  height: 30vh;
+  width: 100%;
+  margin-top: -70px;
+  /* Add these lines */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* End of added lines */
+  font-size: 1.2em;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .title-product-service h1,
@@ -66,11 +80,11 @@
 }
 
 .card {
-    background-color: none;
-            border-radius: 10px;
+            background-color: none;
+            border-radius: 12px;
             margin: 20px auto;
             padding: 30px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .card img {
@@ -139,7 +153,7 @@
                         </div>
                         <hr class="my-4">
                         <!-- Product Description -->
-                        <div>
+                        <div class="description-product">
                             <p>
                                 Description:
                                 {!! $post->description !!}
@@ -173,9 +187,10 @@
             background-color: #fff;
             border: none;
             padding: 40px;
-            margin-bottom: 30px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
+            margin-top: -30px;
+            margin-bottom: -30px;
         }
 
         .news-section h2 {
@@ -215,8 +230,9 @@
         .published-info {
             font-size: 0.85em;
             color: #6c757d;
-            text-align: right;
+            text-align: left;
             margin-top: 20px;
+            margin-left: auto;
         }
 
         .published-images img {
@@ -228,7 +244,8 @@
         }
 
         .news-content {
-            margin-top: 30px;
+            margin-top: 50px;
+            text-align: justify;
         }
 
         .news-content h3 {
@@ -243,7 +260,7 @@
         .tags {
             margin-top: 30px;
             font-size: 0.9em;
-            color: #6c757d;
+            color: orange;
         }
     </style>
 </head>
@@ -255,20 +272,21 @@
             <a class="breadcrumb-item" href="{{ url()->previous() }}">{{$post->category->name}}</a>
             <span class="breadcrumb-item active">{{$post->title}}</span>
         </nav>
-        <div class="published-title">
+        <div class="published-title" style="text-align:center;">
             {{$post->title}}
         </div>
-        <div class="published-info">
-            <p class="news-date">Dipublikasikan oleh {{ $post->user->name }} | {{ $post->created_at->format('d F Y') }}</p>
-        </div>
-        <div class="published-images">
+
+        <div class="published-images" style="content-align:center;">
             @if ($post->image)
                 <img src="{{ asset('assets/images/' . $post->image) }}" alt="{{ $post->title }}">
             @endif
         </div>
 
+        <div class="published-info">
+            <p class="news-date">Dipublikasikan oleh {{ $post->user->name }} | {{ $post->created_at->format('d F Y') }}</p>
+        </div>
+
         <div class="news-content">
-            <h3>Description :</h3>
             <div class="content-frame">
                 {!! $post->description !!}
             </div>

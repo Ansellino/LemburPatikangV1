@@ -63,6 +63,7 @@
       align-items: center;
       justify-content: center;
       color: white;
+      margin-top:-40px;
     }
 
     .banner-content h1 {
@@ -76,8 +77,9 @@
     }
 
     .about-content {
-      padding: 40px 20px;
-      color: #333;
+      background-color: white;
+      color: black;
+      padding: 60px 20px;
     }
 
     .about-content p {
@@ -162,6 +164,7 @@
       background-color: #A9B388;
       padding: 60px 20px;
       color: #333;
+      margin-bottom:-30px;
     }
 
     .offer-card {
@@ -225,7 +228,7 @@
   <section class="about-content container" >
     <div class="row">
       <div class="col-lg-6" style="margin-top: min(50px);">
-        <h2>Selamat Datang di Lembur Mangrove</h2>
+        <h1>Selamat Datang di Lembur Mangrove</h1>
         <p>
           Selamat datang di Lembur Mangrove, sebuah desa wisata yang terletak di Kampung Patikang, Desa Citeureup,
           Panimbang, Pandeglang, Banten.
@@ -254,7 +257,7 @@
           class="img-fluid rounded shadow" style="width: 100%; height: auto;">
       </div>
       <div class="col-lg-6" style=" margin-top: min(50px);">
-        <h2>Who Are We?</h2>
+        <h1>Who Are We?</h1>
         <p>
           Kami adalah komunitas petani, nelayan, dan pengrajin yang berdedikasi untuk melestarikan ekosistem mangrove
           sekaligus mengenalkan Lembur Mangrove pada dunia.
