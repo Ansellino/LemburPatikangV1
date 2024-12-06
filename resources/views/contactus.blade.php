@@ -26,7 +26,7 @@
     html {
         margin: 0;
         padding: 0;
-        min-height: 100%;
+        min-height: 100vh;
         display: flex;
         flex-direction: column;
     }
@@ -122,6 +122,20 @@
         color: turquoise;
         margin: 0 10px 0 10px;
     }
+
+    .location-contact-section .row {
+  display: flex; /* Enable flexbox for the row */
+  align-items: stretch; /* Stretch the columns to have the same height */
+}
+
+.location-contact-section .col-lg-6 {
+  display: flex; /* Enable flexbox for the columns */
+  flex-direction: column; /* Align items vertically within the columns */
+}
+
+.location-contact-section .element {
+  flex: 1; /* Allow the elements to take up available space */
+}
 </style>
 
 <body>
@@ -153,7 +167,7 @@
                         <h>Our Google <br>Maps</h>
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126315.20659509597!2d106.03367431949907!3d-6.431017295315212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e4202b9dc91e187%3A0x18f89808f2e4cf06!2sPandeglang%20Regency%2C%20Banten!5e0!3m2!1sen!2sid!4v1677447108163!5m2!1sen!2sid"
-                            width="100%" height="297" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            width="100%" height="330" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                 </div>
             </div>

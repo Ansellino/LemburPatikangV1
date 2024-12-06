@@ -42,10 +42,29 @@
   align-items: center;
   justify-content: center;
   /* End of added lines */
+  padding: 20px;
   font-size: 1.2em;
   border-radius: 12px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+@media (max-width: 768px) {
+      .title-product-service h1 {
+        font-size: 2em;
+      }
+      .title-product-service h2 {
+        font-size: 1.5em;
+      }
+      .product-detail .card .row {
+        flex-direction: column; /* Stack image and info vertically */
+      }
+      .product-detail .card .col-lg-6 {
+        width: 100%; /* Make columns full width on smaller screens */
+      }
+      .product-detail .card img {
+        margin: 20px auto; /* Center the image */
+      }
+    }
 
 .title-product-service h1,
 .title-product-service h2 {
@@ -262,6 +281,17 @@
             font-size: 0.9em;
             color: orange;
         }
+        @media (max-width: 768px) {
+      .news-section {
+        padding: 20px;
+      }
+      .news-section h2 {
+        font-size: 1.8em;
+      }
+      .published-title {
+        font-size: 1.5em;
+      }
+    }
     </style>
 </head>
 <body>
