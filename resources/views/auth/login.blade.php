@@ -12,6 +12,24 @@
         flex: 1;
     }
 
+    .py-4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 95.3%;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+        font-weight: 600;
+        margin: 0 15px;
+        text-transform: uppercase;
+    }
+
+    .container {
+        max-width: 1320px;
+    }
+
     .card {
   border: none;
   border-radius: 15px; /* More pronounced rounded corners */

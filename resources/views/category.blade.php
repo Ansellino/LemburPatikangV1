@@ -59,6 +59,22 @@
   object-fit: cover;
 }
 
+.row {
+    --bs-gutter-x: 0;
+}
+
+.py-4 {
+    height: 95.3%;
+}
+
+.navbar-nav .nav-link {
+        font-size: 1rem;
+        font-weight: 600;
+        margin: 0 15px;
+        text-transform: uppercase;
+}
+
+
 </style>
 </head>
 <body>
