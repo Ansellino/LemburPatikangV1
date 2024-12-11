@@ -132,13 +132,13 @@
     <body>
         <section>
             <div class="text-center mb-4">
-                <div class="title-product-service" style="margin-top: -1.25%; padding: 0; border-radius: 0;">
+                <div class="title-product-service" style="margin-top: -1.5%; padding: 0; border-radius: 0;">
                     <h1 class="fw-bold">Our Products and Services</h1>
                     <p>Membeli berarti membantu kami selamatkan bumi.</p>
                 </div>
             </div>
         </section>
-        <section class="product-detail" style="background-color:#FEFAE0; margin: -1.25% 0; padding: 0;">
+        <section class="product-detail" style="background-color:#FEFAE0; margin: -1.5% 0; padding: 0;">
             <div class="container py-5">
                 <!-- Product Detail Card -->
 
@@ -159,14 +159,14 @@
 
                                 <!-- Product Info -->
                                 <div class="col-lg-6">
-                                    <h2 class="fw-bold">{{$post->title}}</h2>
+                                    <h2 class="fw-bold" style="color: #C4661F; font-size: 48px;">{{$post->title}}</h2>
                                     <p>{{$post->penjelasan}}</p>
-                                    <h4 class="text-success fw-bold">Rp.{{$post->lowprice}} - Rp.{{$post->highprice}}</h4>
+                                    <h4 class="text-success fw-bold" style="color: #000 !important;">Rp.{{$post->lowprice}} - Rp.{{$post->highprice}}</h4>
                                     <p><strong>Available variants:</strong></p>
                                     <ul>
                                         <li>{{$post->ukuran}}</li>
                                     </ul>
-                                    <a href="https://wa.me/082286411152" class="btn btn-success mt-3"><i
+                                    <a href="https://wa.me/082286411152" class="btn btn-success mt-3" style="background-color: #5F6F52; width: 100%; height: auto; font-size: 36px; font-weight: 600;"><i
                                             class="bi bi-whatsapp"></i> Order Now!</a>
                                     <p class="mt-3">
                                         <strong>Tags:</strong> {{$post->tags}}
@@ -176,10 +176,10 @@
                             <hr class="my-4">
                             <!-- Product Description -->
                             <div class="description-product">
-                                <p>
-                                    Description:
-                                    {!! $post->description !!}
-                                </p>
+                                <h style="color: #5F6F52; text-decoration: underline; font-size: 32px;">
+                                    Description
+                                </h>
+                                <p>{!! $post->description !!}</p>
                             </div>
                         </div>
                     </div>
