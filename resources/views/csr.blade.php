@@ -233,7 +233,7 @@ body, html {
   color: white;
   text-align: center;
   margin-bottom: -30px;
-  margin-top:-30px;
+  margin-top:-60px;
 }
 
 .cta-background {
@@ -244,34 +244,44 @@ body, html {
   padding: 91px 20px;
 }
 
-.cta-background h2 {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-bottom: 10px;
-  background-color: #a65325;
-  display: inline-block;
-  padding: 13px 19px;
-  border-radius: 15px;
-}
-
-.cta-background p {
-  font-size: 1.2rem;
-  margin-top: 15px;
-  background-color: #a65325;
-  display: inline-block;
-  padding: 10px 20px;
-  border-radius: 15px;
-}
-
-.cta-background a {
+.btn-contact {
+  background-color:#a65325;
   color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
   text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top:-30px;
 }
 
-.cta-background a:hover {
-  text-decoration: underline;
+.btn-contact:hover {
+  background-color: #e76f51;
+  color: white;
 }
 
+.contact-message {
+        margin-top: 20px;
+        font-size: 1.5rem;
+        color: #a65325;
+        font-weight: bold;
+      }
+      .contact-message a {
+        color: white;
+        background-color: #a65325;
+        padding: 5px 10px;
+        border-radius: 5px;
+        text-decoration: none;
+      }
+
+      .contact-message p {
+        margin-top: -4px;
+        margin-bottom: 0rem;
+      }
+
+      .contact-message a:hover {
+        background-color: #883e1a;
+      }
 </style>
 </head>
 <body>
@@ -342,12 +352,14 @@ body, html {
 
           <section class="cta-section">
             <div class="cta-background">
-              <div class="container text-center" style="padding-bottom:10px;">
-                <h2>Click Here to Chat Pak Deden on +62 817-849-463</h2>
-              </div>
-              <div class="cta-background2">
-                <h2>Email Us at <a href="mailto:hello@lemburmangrove.com">hello@lemburmangrove.com</a></h2>
-               </div>
+                <div class="cta-section text-center mt-5">
+                    <a href="https://wa.me/62817849463" class="btn btn-contact">
+                      Click Here to Chat Pak Deden at +62 817-849-463
+                    </a>
+                    <p class="contact-message">
+                      Email us at <a href="mailto:hello@lemburmangrove.com">hello@lemburmangrove.com</a>
+                    </p>
+                  </div>
             </div>
           </section>
 
