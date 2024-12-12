@@ -116,6 +116,7 @@
   background-color: #4CAF50; /* Green checkbox when checked */
   border-color: #4CAF50;
 }
+
 </style>
 <div class="container">
     <div class="row justify-content-center">
