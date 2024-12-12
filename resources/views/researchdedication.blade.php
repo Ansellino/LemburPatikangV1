@@ -94,24 +94,35 @@ body, html {
 }
 
 /* Content Section */
-.content h3 {
-  font-size: 1.8rem;
+.content h2 {
+  margin-top: 35px;
+  font-size: 2.1rem;
   color: #4b644a;
   margin-bottom: 20px;
+  text-align: right;
+  margin-right: 40px;
 }
 
 .content p {
-  font-size: 1rem;
+  font-size: 1.3rem;
   line-height: 1.8;
   color: #333;
+  text-align: right;
+  margin-right: 40px;
 }
 
 .content-image {
   background : url('{{ URL::to('/assets/images/research-image.jpg') }}') no-repeat center center/cover;
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
-  height: 300px;
-  border-radius: 10px;
+  opacity: 1;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  width: 500px;
+  height: 650px;
 }
 
 /* Call-to-Action Section */
@@ -155,6 +166,28 @@ a {
         text-decoration: underline;
       }
 
+      .contact-message {
+        margin-top: 20px;
+        font-size: 1.5rem;
+        color: #a65325;
+        font-weight: bold;
+      }
+      .contact-message a {
+        color: white;
+        background-color: #a65325;
+        padding: 5px 10px;
+        border-radius: 5px;
+        text-decoration: none;
+      }
+
+      .contact-message p {
+        margin-top: -4px;
+        margin-bottom: 0rem;
+      }
+
+      .contact-message a:hover {
+        background-color: #883e1a;
+      }
 </style>
 </head>
 <body>
@@ -172,16 +205,21 @@ a {
           <div class="content row mt-5">
             <!-- Left Text Content -->
             <div class="col-lg-7">
-              <h3>Open to All Research & Dedication Initiatives!</h3>
+              <h2>Open to All Research & Dedication Initiatives!</h2>
               <p>
-                Lembur Mangrove Patikang di Desa Citeureup adalah kawasan yang kaya akan potensi untuk kegiatan penelitian dan pengabdian masyarakat.
-                Sebagai desa wisata berbasis konservasi dan pemberdayaan, kami membuka peluang kolaborasi dengan universitas dan institusi akademik
-                untuk bersama-sama menciptakan dampak positif melalui ilmu pengetahuan dan aksi nyata.
+                Patikang Mangrove Valley in Citeureup Village is an area rich in potential for research and community
+                service activities. As a conservation and empowerment-based tourism village, we open opportunities for collaboration
+                with universities and academic institutions to jointly create positive impacts through science and real action.
               </p>
               <p>
-                Lembur Mangrove percaya bahwa sinergi antara dunia akademik dan komunitas lokal dapat menjadi fondasi yang kuat untuk menciptakan
-                perubahan berkelanjutan. Kami berkomitmen menyediakan fasilitas dan akses yang mendukung keberhasilan program penelitian dan
-                pengabdian masyarakat.
+                Lembur Mangrove believes that synergy between the academic world and local communities can be a
+                strong foundation for creating sustainable change. We are committed to providing
+                facilities and access that support the success of research and service programs in this area.
+              </p>
+              <p>
+                If your university or institution is interested in working together, please contact us through
+                our official contact for more information. Together, let us improve our understanding and contribution
+                to environmental conservation and community welfare in Lembur Mangrove.
               </p>
             </div>
             <!-- Right Image Content -->
@@ -195,7 +233,7 @@ a {
             <a href="https://wa.me/62817849463" class="btn btn-contact">
               Click Here to Chat Pak Deden at +62 817-849-463
             </a>
-            <p class="mt-3">
+            <p class="contact-message">
               Email us at <a href="mailto:hello@lemburmangrove.com">hello@lemburmangrove.com</a>
             </p>
           </div>
