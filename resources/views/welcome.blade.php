@@ -609,7 +609,7 @@ padding: 66px 20px;
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="locals-card">
                         <img src="{{ URL::to('/assets/images/research-dedication.jpg') }}" alt="Research and Dedication" class="img-fluid rounded">
-                        <a href="{{ url('/csr')}}"><h3>Research and Dedication</h3></a>
+                        <a href="{{ url('/researchdedication')}}"><h3>Research and Dedication</h3></a>
                         <p>
                             Penelitian dan pengabdian akademisi sangat dibutuhkan dalam keberlangsungan kehidupan masyarakat sekitar.
                         </p>

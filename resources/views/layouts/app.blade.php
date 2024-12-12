@@ -125,9 +125,10 @@
     </div>
     <footer class="footer">
         <div class="container text-center">
-            <a href="#" class="footer-link">Refund Policy</a>
+            <a href="https://www.instagram.com/umngrove" class="footer-link">Website by @umngrove</a>
+            {{-- <a href="#" class="footer-link">Refund Policy</a>
             <a href="#" class="footer-link">Privacy Policy</a>
-            <a href="#" class="footer-link">Indikator Pengunjung</a>
+            <a href="#" class="footer-link">Indikator Pengunjung</a> --}}
         </div>
     </footer>
 </body>

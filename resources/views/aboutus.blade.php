@@ -63,7 +63,7 @@
       align-items: center;
       justify-content: center;
       color: white;
-      margin-top:-40px;
+      margin-top:-47px;
     }
 
     .banner-content h1 {

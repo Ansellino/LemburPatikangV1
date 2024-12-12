@@ -60,7 +60,9 @@ body, html {
 /* Research Section */
 .research-section {
   padding: 60px 20px;
-  background-color: #f5f5f5;
+  background-color: cornsilk;
+  margin-top: -48px;
+  margin-bottom: -40px;
 }
 
 /* Header Background */

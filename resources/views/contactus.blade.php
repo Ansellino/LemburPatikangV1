@@ -82,8 +82,9 @@
     .element h {
         text-transform: none;
         color: #5F6F52;
-        font-size: 50px;
+        font-size: 45px;
         font-weight: bold;
+        margin-bottom: 17px;
     }
 
     .capsule {
@@ -145,7 +146,7 @@
                 <!-- Location & Contact -->
                 <div class="col-lg-6">
                     <div class="element">
-                        <h>Location & <br>Our Contact</h>
+                        <h>Location & Our Contact</h>
                         <div class="capsule">
                             <i class="fa fa-home" style="font-size: 30px; color:#5F6F52;"></i>
                             <p1>==</p1>
@@ -164,10 +165,10 @@
 
                 <div class="col-lg-6">
                     <div class="element">
-                        <h>Our Google <br>Maps</h>
+                        <h>Our Google Maps</h>
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126315.20659509597!2d106.03367431949907!3d-6.431017295315212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e4202b9dc91e187%3A0x18f89808f2e4cf06!2sPandeglang%20Regency%2C%20Banten!5e0!3m2!1sen!2sid!4v1677447108163!5m2!1sen!2sid"
-                            width="100%" height="330" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            width="100%" height="332" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                 </div>
             </div>
