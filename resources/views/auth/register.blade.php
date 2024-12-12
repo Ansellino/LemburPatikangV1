@@ -1,7 +1,28 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+
+<style>
+    .py-4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 95.3%;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+        font-weight: 600;
+        margin: 0 15px;
+        text-transform: uppercase;
+    }
+
+    .container {
+        max-width: 1320px;
+    }
+
+</style>
+<div class="container" style="margin-top: 45px">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -52,7 +73,7 @@
                                 @enderror
                             </div>
                         </div>
-                        
+
                         <div class="form-group row">
                             <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
 
