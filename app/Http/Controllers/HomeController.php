@@ -111,13 +111,13 @@ class HomeController extends Controller
         return Redirect::back()->with('message','Delete Successful !');
     }
     public function editedblog($id, Request $request){
-$user = Auth::user();
-Validator::make($request->all(), [
-    'title'   => 'required',
-    'textarea' => 'required',
-    'image'        => 'nullable|mimes:jpeg,png,jpg',
-])->validate();
-$check = $request->hasFile('image');
+    $user = Auth::user();
+    Validator::make($request->all(), [
+        'title'   => 'required',
+        'textarea' => 'required',
+        'image'        => 'nullable|mimes:jpeg,png,jpg',
+    ])->validate();
+    $check = $request->hasFile('image');
         if($check){
             if ($request->hasFile('image')) {
                 $image = $request->file('image');
@@ -132,6 +132,11 @@ $check = $request->hasFile('image');
             $articles->title = $request->title;
             $articles->description = $request->textarea;
             $articles->image = $name;
+            $articles->tags = $request->tags;
+            $articles->lowprice = $request->lowprice;
+            $articles->highprice = $request->highprice;
+            $articles->penjelasan = $request->penjelasan;
+            $articles->ukuran = $request->ukuran;
             $articles->save();
 
         }else{
@@ -140,6 +145,11 @@ $check = $request->hasFile('image');
             $articles->category_id = $request->myselect+1;
             $articles->title = $request->title;
             $articles->description = $request->textarea;
+            $articles->tags = $request->tags;
+            $articles->lowprice = $request->lowprice;
+            $articles->highprice = $request->highprice;
+            $articles->penjelasan = $request->penjelasan;
+            $articles->ukuran = $request->ukuran;
             $articles->save();
         }
         $user = Auth::user();
