@@ -52,13 +52,11 @@ The website serves as a platform to:
 ## 🛠️ **Technology Stack**
 
 - **Frontend**: 
-  - HTML, CSS, JavaScript, Bootstrap (for responsive and modern UI Design)
+  - HTML, CSS, JavaScript, Bootstrap 5.3 
 - **Backend**: 
   - Laravel 7
 - **Database**: 
   - MySQL
-- **Frameworks and Libraries:**
-  - Bootstrap 5.3
 - **Architecture**: 
   - MVC (Model View Controller)
 - **Design Tool**: 
@@ -103,6 +101,15 @@ The website serves as a platform to:
 
 ---
 
+## 🏗️ **Project Architecture**
+The project follows the Model-View-Controller (MVC) architecture:
+
+- **Model**: Manages application data and business logic.
+- **View**: Handles UI rendering with Laravel Blade templates.
+- **Controller**: Bridges the Model and View for smooth user interactions.
+
+---
+
 ## 👤 **User Roles and Access**
 
 ### **Admin**
@@ -138,8 +145,13 @@ We welcome contributions from the community! Follow these steps:
 
 ---
 
-## 🌟 **Special Thanks**
+## 📈 **Roadmap**
+**Upcoming Features**
+- Multi-language Support (Bahasa Indonesia & English)
 
+---
+## 🌟 **Special Thanks**
+We extend our gratitude to the follo
 - **Project Leader**: Lovenia Megumi Surjanto
 - **Public Relations**: Imel Sausan Maryam, Winsten, Christabell Grace Chalin
 - **Event Coordinators**: Angel Tambarna Teresa, Rafael Putra Hulu
