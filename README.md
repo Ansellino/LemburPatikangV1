@@ -1,61 +1,164 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+Here’s an advanced and well-structured **README.md** file for the UMNGrove project:
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+---
 
-## About Laravel
+# UMNGrove - Lembur Mangrove Patikang Website
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+### 🌿 **Empowering Communities Through Mangrove Conservation**
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 📋 **Table of Contents**
+1. [Project Overview](#project-overview)
+2. [Features](#features)
+3. [Technology Stack](#technology-stack)
+4. [Installation and Setup](#installation-and-setup)
+5. [User Roles and Access](#user-roles-and-access)
+6. [Contribution Guidelines](#contribution-guidelines)
+7. [Special Thanks](#special-thanks)
+8. [License](#license)
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## 📖 **Project Overview**
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+The **Lembur Mangrove Patikang Website** is part of the **International Community Outreach Program** by Universitas Multimedia Nusantara (UMN), aimed at revitalizing the mangrove conservation initiative in Banten, Indonesia. This non-profit project is in collaboration with Multimedia University Malaysia and Jilin University, Hong Kong, funded by LPPM UMN.
 
-## Laravel Sponsors
+The website serves as a platform to:
+- Promote eco-tourism.
+- Support local economic empowerment.
+- Foster environmental sustainability.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+### 🌟 **Goals**
+- Enhance community awareness of mangrove conservation.
+- Provide a professional and user-friendly platform for tourism and product promotion.
+- Support sustainable development through education and community engagement.
 
-### Premium Partners
+---
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[OP.GG](https://op.gg)**
+## 🌟 **Features**
 
-## Contributing
+- **Home Page**: Dynamic insights into eco-tourism, products, and mangrove benefits.
+- **About Us**: Highlights the initiative's mission, vision, and contributors.
+- **Category Pages**:
+  - **Contact**: Easy access to reach out to the team.
+  - **Payment Gateway**: Simplified booking and donation process.
+  - **Products and Tours**: Details on local goods and eco-tourism activities.
+  - **News & Blogs**: Updates on conservation efforts and local stories.
+  - **Visitor Indicators**: Real-time statistics on engagement and visits.
+- **User Management**:
+  - **Admin**: Comprehensive control of the site.
+  - **Members**: Personalized dashboard and content creation tools.
+  - **Guests**: Limited access to browse content and learn about the initiative.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+---
 
-## Code of Conduct
+## 🛠️ **Technology Stack**
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+- **Frontend**: 
+  - HTML, CSS, JavaScript
+- **Backend**: 
+  - Laravel 7
+- **Database**: 
+  - MySQL
+- **Architecture**: 
+  - MVC (Model View Controller)
+- **Design Tool**: 
+  - Figma (for UI/UX mockups)
 
-## Security Vulnerabilities
+---
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## ⚙️ **Installation and Setup**
 
-## License
+### Prerequisites
+1. PHP (>=7.3)
+2. Composer
+3. Node.js and npm
+4. MySQL
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### Steps
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/UMNGrove/website.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd website
+   ```
+3. Install dependencies:
+   ```bash
+   composer install
+   npm install
+   ```
+4. Set up the environment:
+   - Create a `.env` file based on `.env.example`.
+   - Configure your database credentials.
+5. Run migrations and seed the database:
+   ```bash
+   php artisan migrate --seed
+   ```
+6. Start the development server:
+   ```bash
+   php artisan serve
+   ```
+7. Access the site at `http://localhost:8000`.
+
+---
+
+## 👤 **User Roles and Access**
+
+### **Admin**
+- Manage users, content, and categories.
+- View analytics and visitor statistics.
+
+### **Member**
+- Create and manage posts.
+- Edit personal profiles.
+
+### **Guest**
+- Browse available content and learn about the program.
+
+---
+
+## 🤝 **Contribution Guidelines**
+
+We welcome contributions from the community! Follow these steps:
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix:
+   ```bash
+   git checkout -b feature-name
+   ```
+3. Commit your changes:
+   ```bash
+   git commit -m "Description of changes"
+   ```
+4. Push the changes:
+   ```bash
+   git push origin feature-name
+   ```
+5. Open a pull request, and the team will review it.
+
+---
+
+## 🌟 **Special Thanks**
+
+- **Project Leader**: Lovenia Megumi Surjanto
+- **Public Relations**: Imel Sausan Maryam, Winsten, Christabell Grace Chalin
+- **Event Coordinators**: Angel Tambarna Teresa, Rafael Putra Hulu
+- **Visuals**: Maitriana, Luna Ardhagia Widodo
+- **Social Media**: Cindy Celia Jennifer, Kezia Margaretha Chandra
+- **Developers**:
+  - Fullstack: Jeremy Ansellino Gunawan
+  - Frontend: Aldo Juan Edrick Jolin, Ivan Reynardo
+  - Backend: Edward
+- **Videography**: National Geographic Indonesia (support)
+
+---
+
+## 📜 **License**
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+--- 
+
+Let me know if you'd like any additional refinements!
