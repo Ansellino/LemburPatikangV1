@@ -1,7 +1,3 @@
-Here’s an advanced and well-structured **README.md** file for the UMNGrove project:
-
----
-
 # UMNGrove - Lembur Mangrove Patikang Website
 
 ### 🌿 **Empowering Communities Through Mangrove Conservation**
