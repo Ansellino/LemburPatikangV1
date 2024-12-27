@@ -1,4 +1,4 @@
-# UMNGrove - Lembur Mangrove Patikang Website
+# UMNGrove - Lembur Mangrove Patikang Website V.1.0
 
 ### 🌿 **Empowering Communities Through Mangrove Conservation**
 
@@ -9,10 +9,12 @@
 2. [Features](#features)
 3. [Technology Stack](#technology-stack)
 4. [Installation and Setup](#installation-and-setup)
-5. [User Roles and Access](#user-roles-and-access)
-6. [Contribution Guidelines](#contribution-guidelines)
-7. [Special Thanks](#special-thanks)
-8. [License](#license)
+5. [Project Architecture](#️project-architecture)
+6. [User Roles and Access](#user-roles-and-access)
+7. [Contribution Guidelines](#contribution-guidelines)
+8. [Roadmap](#roadmap)
+9. [Special Thanks](#special-thanks)
+10. [License](#license)
 
 ---
 
@@ -148,10 +150,10 @@ We welcome contributions from the community! Follow these steps:
 ## 📈 **Roadmap**
 **Upcoming Features**
 - Multi-language Support (Bahasa Indonesia & English)
-
+- 
 ---
 ## 🌟 **Special Thanks**
-We extend our gratitude to the follo
+We extend our gratitude to the following contributors and partners:
 - **Project Leader**: Lovenia Megumi Surjanto
 - **Public Relations**: Imel Sausan Maryam, Winsten, Christabell Grace Chalin
 - **Event Coordinators**: Angel Tambarna Teresa, Rafael Putra Hulu
