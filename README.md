@@ -52,11 +52,13 @@ The website serves as a platform to:
 ## 🛠️ **Technology Stack**
 
 - **Frontend**: 
-  - HTML, CSS, JavaScript
+  - HTML, CSS, JavaScript, Bootstrap (for responsive and modern UI Design)
 - **Backend**: 
   - Laravel 7
 - **Database**: 
   - MySQL
+- **Frameworks and Libraries:**
+  - Bootstrap 5.3
 - **Architecture**: 
   - MVC (Model View Controller)
 - **Design Tool**: 
