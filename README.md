@@ -150,7 +150,7 @@ We welcome contributions from the community! Follow these steps:
 ## 📈 **Roadmap**
 **Upcoming Features**
 - Multi-language Support (Bahasa Indonesia & English)
-- 
+
 ---
 ## 🌟 **Special Thanks**
 We extend our gratitude to the following contributors and partners:
