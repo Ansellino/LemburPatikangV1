@@ -163,7 +163,7 @@ We extend our gratitude to the following contributors and partners:
   - Fullstack: Jeremy Ansellino Gunawan
   - Frontend: Aldo Juan Edrick Jolin, Ivan Reynardo
   - Backend: Edward
-- **Videography**: National Geographic Indonesia (support)
+- **Videography**: Evelyn Valencia
 
 ---
 
