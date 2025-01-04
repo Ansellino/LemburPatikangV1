@@ -57,7 +57,7 @@ The website serves as a platform to:
   - HTML, CSS, JavaScript, Bootstrap 5.3 
 - **Backend**: 
   - PHP 
-  **Framework**:
+- **Framework**:
   - Laravel 7
 - **Database**: 
   - MySQL
