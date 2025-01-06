@@ -32,7 +32,7 @@
             }
 
             .title-product-service {
-                background: url('{{ URL::to('/assets/images/lembur-mangrove-products.jpg') }}') no-repeat center center/cover;
+                background: url('{{ URL::to('/assets/images/product-lembur-mangrove.webp') }}') no-repeat center center/cover;
                 height: 500px;
                 /* Add these lines */
                 display: flex;
@@ -134,7 +134,8 @@
     <body>
         <section>
             <div class="text-center mb-4">
-                <div class="title-product-service" style="margin-top: -1.5%; padding: 0; border-radius: 0;">
+                <div class="title-product-service" style="margin-top: -1.5%; padding: 0; border-radius: 0; -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;">
                     <h1 class="fw-bold">Our Products and Services</h1>
                     <p>Membeli berarti membantu kami selamatkan bumi.</p>
                 </div>
@@ -156,12 +157,12 @@
                                 <!-- Product Image -->
                                 <div class="col-lg-6 text-center">
                                     <img src="{{ URL::to('/assets/images/' . $post->image) }}" class="img-fluid rounded"
-                                        alt="Fresh Mangrove Syrup">
+                                        alt="Fresh Mangrove Syrup" style="width: 100%; height: auto;">
                                 </div>
 
                                 <!-- Product Info -->
                                 <div class="col-lg-6">
-                                    <h2 class="fw-bold" style="color: #C4661F; font-size: 48px;">{{$post->title}}</h2>
+                                    <h2 class="fw-bold" style="color: #C4661F; font-size: 30px;">{{$post->title}}</h2>
                                     <p>{{$post->penjelasan}}</p>
                                     <h4 class="text-success fw-bold" style="color: #000 !important;">Rp.{{$post->lowprice}} - Rp.{{$post->highprice}}</h4>
                                     <p><strong>Available variants:</strong></p>

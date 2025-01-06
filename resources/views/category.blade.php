@@ -15,6 +15,9 @@
     border: 1px solid #ddd;
     padding: 20px;
     border-radius: 5px;
+    display: flex;
+    height: 600px;
+    flex-direction: column;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease; /* Add a hover transition */
 }
@@ -29,7 +32,7 @@
 }
 
 .blog-post-content .post-image img {
-    border-radius: 5px;
+    border-radius: 10%;
     width: 100%;
     height: auto;
 }
@@ -84,14 +87,16 @@
                     @foreach ($post as $post)
                         <div class="col-md-4 col-form-label text-md">
                             <div class="item_subs">
-                                <h2><a href="/post/{{ $post->id }}" style="color: black" >{{ $post->title }}</a></h2>
+                                <h2 style="font-size:1.3rem"><a href="/post/{{ $post->id }}" style="color: black" >{{ $post->title }}</a></h2>
                                 @if ($post->image)
                                     <div class="post-image">
-                                        <img src="{{ asset('assets/images/' . $post->image) }}" alt="{{ $post->title }}"  style="width: 100%; height: 200px; object-fit: cover;">
+                                        <a href="/post/{{ $post->id }}" style="color: black" >
+                                            <img src="{{ asset('assets/images/' . $post->image) }}" alt="{{ $post->title }}"  style="width: 100%; height: 200px; object-fit: cover;">
+                                        </a>
                                     </div>
                                 @endif
                                 @if ($post->category_id==1)
-                                <h4 class="text-success fw-bold">Rp.{{$post->lowprice}} - Rp.{{$post->highprice}}</h4>
+                                <h4 class="text-success fw-bold" style="text-align:center">Rp.{{$post->lowprice}} - Rp.{{$post->highprice}}</h4>
                                 @endif
                                     {!! \Illuminate\Support\Str::limit($post->description, 75, '') !!}
                                     @if (strlen($post->description) > 75)
