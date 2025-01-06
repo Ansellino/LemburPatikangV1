@@ -29,7 +29,7 @@
     <img src="{{ URL::asset('assets/images/image1.jpg')}}" alt="image logo"> --}}
 </div>
     <div class="navigation-bar">
-        <nav class="navbar navbar-expand-md navbar-light shadow-sm" style="background-color: #fcfce4;">
+        <nav class="navbar navbar-expand-md navbar-light shadow-sm" style="background-color: #fcfce4; border-bottom: 1px solid black;">
             <div class="container">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>

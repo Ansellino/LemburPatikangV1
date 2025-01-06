@@ -73,6 +73,27 @@
         text-transform: uppercase;
 }
 
+a.nav-link:link
+{
+   color: #fb3f00;
+   text-decoration: none;
+}
+a.nav-link:visited
+{
+   color: #fb3f00;
+   text-decoration: none;
+}
+a.nav-link:hover
+{
+   color: #fb3f00;
+   text-decoration: none;
+}
+a.nav-link:active
+{
+   color: #fb3f00;
+   text-decoration: none;
+}
+
 </style>
 </head>
 <body>
@@ -96,15 +117,15 @@
                                     </div>
                                 @endif
                                 @if ($post->category_id==1)
-                                <h4 class="text-success fw-bold" style="text-align:center">Rp.{{$post->lowprice}} - Rp.{{$post->highprice}}</h4>
+                                <h4 class="text-success fw-bold" style="text-align:center; padding-top: 5px; padding-bottom: 10px; font-size:1.6rem;">Rp.{{$post->lowprice}} - Rp.{{$post->highprice}}</h4>
                                 @endif
                                     {!! \Illuminate\Support\Str::limit($post->description, 75, '') !!}
                                     @if (strlen($post->description) > 75)
-                                        <span id="dots">...<a href="/post/{{ $post->id }}">full story</a></span>
+                                        <span id="dots">...<a href="/post/{{ $post->id }}" style="text-decoration: none; padding-left:5px;">full story</a></span>
                                         <span id="more">{ \Illuminate\Support\Str::substr($post->description, 75)}</span>
                                     @endif
                                 </p>
-                                <p><i>Category: </i><a href="/category/{{ $post->category->id }}">{{ $post->category->name }}</a></p>
+                                <p><i>Category: </i><a href="/category/{{ $post->category->id }}" style="text-decoration: none; font-size:1.3rem;">{{ $post->category->name }}</a></p>
                             </div>
                         </div>
                     @endforeach
