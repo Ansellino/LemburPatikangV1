@@ -228,6 +228,7 @@
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         text-align: center;
         transition: transform 0.3s ease;
+        height: 400px;
       }
 
       .locals-card:hover {
@@ -354,6 +355,12 @@
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         text-align: left;
         transition: transform 0.3s ease;
+        margin-bottom: 30px;
+        border: 1px solid #ddd;
+        display: flex;
+        height: 530px;
+        flex-direction: column;
+        transition: transform 0.2s ease;
       }
 
       .blog-card:hover,
@@ -463,52 +470,52 @@
         background-color: #e76f51;
       }
 
-/* Procedure Section */
-.procedure-section {
-background-color: #FEFAE0; /* Light green background */
-padding: 66px 20px;
-}
+    /* Procedure Section */
+    .procedure-section {
+    background-color: #FEFAE0; /* Light green background */
+    padding: 66px 20px;
+    }
 
-.procedure-box {
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 30px;
-}
+    .procedure-box {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    }
 
-.procedure-box h2 {
-  font-size: 4rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-  color: #4b644a;
-  font-family: 'poppins';
-}
+    .procedure-box h2 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #4b644a;
+    font-family: 'poppins';
+    }
 
-.procedure-list {
-  list-style-type: decimal;
-  padding-left: 20px;
-  line-height: 1.2;
-  color: #333;
+    .procedure-list {
+    list-style-type: decimal;
+    padding-left: 20px;
+    line-height: 1.2;
+    color: #333;
 
-}
+    }
 
-.procedure-list li {
-  margin-bottom: 15px;
-}
+    .procedure-list li {
+    margin-bottom: 15px;
+    }
 
-.procedure-list b {
-  color: #4b644a; /* Highlighted text */
-}
+    .procedure-list b {
+    color: #4b644a; /* Highlighted text */
+    }
 
-.procedure-list ul {
-  list-style-type: disc;
-  margin-top: 10px;
-  padding-left: 20px;
-}
+    .procedure-list ul {
+    list-style-type: disc;
+    margin-top: 10px;
+    padding-left: 20px;
+    }
 
-.procedure-list ul li {
-  margin-bottom: 5px;
-}
+    .procedure-list ul li {
+    margin-bottom: 5px;
+    }
 
       /* Footer */
       .footer {
@@ -582,7 +589,7 @@ padding: 66px 20px;
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="locals-card">
                         <img src="{{ URL::to('/assets/images/tour-packages.jpg') }}" alt="Tour Packages" class="img-fluid rounded">
-                        <a href="/category/1"> <h3>Tour Packages</h3> </a>
+                        <a href="/category/1" style="text-decoration: none;"> <h3>Tour Packages</h3> </a>
                         <p>
                             Paket Wisata lembur mangrove yang dengan konsep wisata edukasi, ekologi yang berkelanjutan bagi sosial ekonomi dan lingkungan.
                         </p>
@@ -591,7 +598,7 @@ padding: 66px 20px;
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="locals-card">
                         <img src="{{ URL::to('/assets/images/mangrove-products.jpg') }}" alt="Mangrove Products" class="img-fluid rounded">
-                        <a href="/category/1"> <h3> Mangrove Products </h3> </a>
+                        <a href="/category/1" style="text-decoration: none;"> <h3> Mangrove Products </h3> </a>
                         <p>
                             Program CSR perusahaan dalam perlindungan lingkungan di pesisir yang dapat meningkatkan daya beli masyarakat sekitar.
                         </p>
@@ -600,7 +607,7 @@ padding: 66px 20px;
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="locals-card">
                         <img src="{{ URL::to('/assets/images/csr-program.png') }}" alt="CSR Programs" class="img-fluid rounded">
-                        <a href="{{ url('/csr')}}"><h3>CSR Programs</h3></a>
+                        <a href="{{ url('/csr')}}" style="text-decoration: none;"><h3>CSR Programs</h3></a>
                         <p>
                             Membeli produk yang dihasilkan dari tanaman mangrove selain kayu dapat meningkatkan ekonomi masyarakat lokal.
                         </p>
@@ -609,7 +616,7 @@ padding: 66px 20px;
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="locals-card">
                         <img src="{{ URL::to('/assets/images/research-dedication.jpg') }}" alt="Research and Dedication" class="img-fluid rounded">
-                        <a href="{{ url('/researchdedication')}}"><h3>Research and Dedication</h3></a>
+                        <a href="{{ url('/researchdedication')}}" style="text-decoration: none;"><h3>Research and Dedication</h3></a>
                         <p>
                             Penelitian dan pengabdian akademisi sangat dibutuhkan dalam keberlangsungan kehidupan masyarakat sekitar.
                         </p>
