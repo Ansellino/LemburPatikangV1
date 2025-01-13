@@ -33,7 +33,7 @@
 
             .title-product-service {
                 background: url('{{ URL::to('/assets/images/product-lembur-mangrove.webp') }}') no-repeat center center/cover;
-                height: 500px;
+                height: 300px;
                 /* Add these lines */
                 display: flex;
                 flex-direction: column;
@@ -119,9 +119,9 @@
 
             .navbar-nav .nav-link {
                 font-size: 1rem;
-                font-weight: 600;
                 margin: 0 15px;
                 text-transform: uppercase;
+                font-weight: normal;
             }
 
             .container {
@@ -129,7 +129,7 @@
             }
 
         </style>
-    </head>
+        </head>
 
     <body>
         <section>
@@ -281,6 +281,13 @@
 
         .content-frame {
             /* Add styles for the content area if needed */
+        }
+
+        .navbar-nav .nav-link {
+            font-size: 1rem;
+            margin: 0 15px;
+            text-transform: uppercase;
+            font-weight: normal;
         }
 
         .tags {
