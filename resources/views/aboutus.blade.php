@@ -307,11 +307,11 @@
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="offer-card">
                             <img src="{{ URL::to('/assets/images/'.$post->image) }}" alt="{{ $post->title }}" class="img-fluid rounded">
-                            <h3><a href="/post/{{$post->id}}" style="color: black;">{{ $post->title }}</a></h3>
+                            <h3><a href="/post/{{$post->id}}" style="color: black; text-decoration: none;">{{ $post->title }}</a></h3>
                             <p>
                                 {{ \Illuminate\Support\Str::limit($post->description, 30) }}
-                                @if (strlen($post->description) > 30)
-                                    <a href="/post/{{ $post->id }}">Read More</a>
+                                @if (strlen($post->description) > 50)
+                                    <a href="/post/{{ $post->id }}" style="text-decoration: none;">Read More</a>
                                 @endif
                             </p>
                         </div>

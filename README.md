@@ -5,16 +5,17 @@
 ---
 
 ## 📋 **Table of Contents**
-1. [Project Overview](#project-overview)
-2. [Features](#features)
-3. [Technology Stack](#technology-stack)
-4. [Installation and Setup](#installation-and-setup)
-5. [Project Architecture](#️project-architecture)
-6. [User Roles and Access](#user-roles-and-access)
-7. [Contribution Guidelines](#contribution-guidelines)
-8. [Roadmap](#roadmap)
-9. [Special Thanks](#special-thanks)
-10. [License](#license)
+1. [Project Overview](#-project-overview)
+2. [Features](#-features)
+3. [Technology Stack](#️-technology-stack)
+4. [Installation and Setup](#️-installation-and-setup)
+5. [Project Architecture](#️-project-architecture)
+6. [User Roles and Access](#-user-roles-and-accesss)
+7. [Contribution Guidelines](#-contribution-guidelines)
+8. [Roadmap](#-roadmap)
+9. [Screen Shots](#-screen-shot)
+10. [Special Thanks](#-special-thanks)
+
 
 ---
 
@@ -154,6 +155,42 @@ We welcome contributions from the community! Follow these steps:
 - Multi-language Support (Bahasa Indonesia & English)
 
 ---
+## 📷 **Screen Shot**
+### Home Page (Non-Login)
+![alt text](imagereadme/image.png)
+![alt text](imagereadme/image2.png)
+![alt text](imagereadme/image3.png)
+![alt text](imagereadme/image4.png)
+
+### About US (Non-Login)
+![alt text](imagereadme/image5.png)
+![alt text](imagereadme/image6.png)
+
+### Contact US (Non-Login)
+![alt text](imagereadme/image7.png)
+
+### Product and Tour
+![alt text](imagereadme/image10.png)
+![alt text](imagereadme/image8.png)
+![alt text](imagereadme/image9.png)
+
+### News and Blog 
+![alt text](imagereadme/image11.png)
+![alt text](imagereadme/image12.png)
+![alt text](imagereadme/image13.png)
+
+### CSR
+![alt text](imagereadme/image14.png)
+
+### Research and Dedication
+![alt text](imagereadme/image15.png)
+
+### Login Page
+![alt text](imagereadme/image16.png)
+
+### Sign Up
+![alt text](imagereadme/image17.png)
+---
 ## 🌟 **Special Thanks**
 We extend our gratitude to the following contributors and partners:
 - **Project Leader**: Lovenia Megumi Surjanto
@@ -169,8 +206,3 @@ We extend our gratitude to the following contributors and partners:
 
 ---
 
-## 📜 **License**
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
