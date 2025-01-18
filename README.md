@@ -15,8 +15,7 @@
 8. [Roadmap](#-roadmap)
 9. [Screen Shots](#-screen-shot)
 10. [Special Thanks](#-special-thanks)
-
-
+11. [License](#license)
 ---
 
 ## 📖 **Project Overview**
@@ -206,3 +205,5 @@ We extend our gratitude to the following contributors and partners:
 
 ---
 
+## 📜**License**
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
