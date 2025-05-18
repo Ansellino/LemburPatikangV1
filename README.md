@@ -54,9 +54,9 @@ The website serves as a platform to:
 ## 🛠️ **Technology Stack**
 
 - **Frontend**: 
-  - HTML, CSS, JavaScript, Bootstrap 5.3 
+  - Blade, CSS, JavaScript, Bootstrap 5.3 
 - **Backend**: 
-  - PHP 
+  - PHP, Laravel Breeze
 - **Framework**:
   - Laravel 7
 - **Database**: 
